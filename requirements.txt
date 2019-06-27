@@ -1,8 +1,6 @@
 django
 numpy
-pandas
 gunicorn
 django-heroku
 djangorestframework
 djangorestframework-gis
-gdal
