@@ -32,10 +32,10 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class RiverGaugeSerializer(GeoFeatureModelSerializer):
     # renderer_class = JSONRenderer
 
-    geom = GeometrySerializerMethodField()
-
-    def get_geom(self, obj):
-        return Point(obj.geom.coords[1], obj.geom.coords[0])
+    # geom = GeometrySerializerMethodField()
+    #
+    # def get_geom(self, obj):
+    #     return Point(obj.geom.coords[1], obj.geom.coords[0])
 
     class Meta:
         model = RiverGauge

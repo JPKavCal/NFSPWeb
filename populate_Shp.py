@@ -12,7 +12,7 @@ gauge_mapping = {
     'geom': 'POINT',
 }
 
-gauge_shp = os.path.abspath(os.path.join(os.getcwd(), 'shp_data', 'Stations_2.shp'))
+gauge_shp = os.path.abspath(os.path.join(os.getcwd(), 'shp_data', 'Stations.shp'))
 
 
 def gauge_import(verbose=True):
