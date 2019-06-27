@@ -5,3 +5,4 @@ django-heroku
 djangorestframework
 djangorestframework-gis
 django-leaflet
+django-crispy-forms
