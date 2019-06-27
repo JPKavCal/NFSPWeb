@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
+import dotenv
 
 from os import environ
 
@@ -26,6 +28,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    dotenv.load_dotenv(dotenv_file)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -35,7 +41,7 @@ SECRET_KEY = 'wugg63l6-dz!f)$y^64uc(sw569wyl(pnwuh15#f4a$j=u=n77'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nfsp.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'nfsp.herokuapp.com']
 
 
 # Application definition
@@ -93,17 +99,8 @@ WSGI_APPLICATION = 'NFSPWebsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'geodjango',
-        'USER': 'nfsp',
-        'PASSWORD': 'D3s1gn-Fl0od+Estimat1on',
-        'HOST': 'localhost',
-        'PORT': '5432'
-    }
-}
-
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
