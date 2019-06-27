@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/static/landing-page.min.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="1409" selection-start-line="4" selection-start-column="1409" selection-end-line="4" selection-end-column="1409" />
+              <caret line="4" column="245" selection-start-line="4" selection-start-column="245" selection-end-line="4" selection-end-column="245" />
             </state>
           </provider>
         </entry>
@@ -130,6 +130,7 @@
       <find>overlay</find>
       <find>STATIC_URL</find>
       <find>img</find>
+      <find>bg-masthead</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,6 +189,12 @@
               <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="gis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -266,7 +273,7 @@
       <workItem from="1561615176584" duration="13199000" />
       <workItem from="1561630040383" duration="7899000" />
       <workItem from="1561659455930" duration="3917000" />
-      <workItem from="1561663844394" duration="3249000" />
+      <workItem from="1561663844394" duration="3421000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -300,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50740000" />
+    <option name="totallyTimeSpent" value="50912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,7 +603,7 @@
     <entry file="file://$PROJECT_DIR$/static/landing-page.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="1409" selection-start-line="4" selection-start-column="1409" selection-end-line="4" selection-end-column="1409" />
+          <caret line="4" column="245" selection-start-line="4" selection-start-column="245" selection-end-line="4" selection-end-column="245" />
         </state>
       </provider>
     </entry>
