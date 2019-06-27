@@ -9,3 +9,4 @@ django-crispy-forms
 whitenoise
 python-dotenv
 dj-database-url
+django-fullurl

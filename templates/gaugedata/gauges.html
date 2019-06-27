@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load leaflet_tags %}
 {% load static %}
+{% load fullurl %}
 
 {% block title %}- K5/2748 Gauges{% endblock %}
 
@@ -26,7 +27,8 @@
    	var markers = L.markerClusterGroup();
 
     console.log( "first success" )
-    dataurl = 'http://localhost:8000/api/gauges/'
+    dataurl = '{% fullurl "NFSP_Website:home" %}api/gauges'
+       console.log(dataurl)
     var gauges = $.ajax({
          url:dataurl,
          dataType:'json',
