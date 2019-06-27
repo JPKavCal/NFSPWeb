@@ -6,3 +6,5 @@ djangorestframework
 djangorestframework-gis
 django-leaflet
 django-crispy-forms
+geos
+proj4
