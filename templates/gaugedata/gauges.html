@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load leaflet_tags %}
+{% load static %}
+
+{% block title %}- K5/2748 Gauges{% endblock %}
+
+{% block header %}
+    {% leaflet_js %}
+    {% leaflet_css %}
+    <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.css' %}" />
+    <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.Default.css' %}" />
+    <script src="{% static 'gaugedata/leaflet.markercluster-src.js' %}"></script>
+
+{% endblock %}
+
+{% block body_block %}
+
+{#<div id="map">#}
+{% leaflet_map "gauges_map" callback="map_init_basic" %}
+{#</div>#}
+
+<script type="text/javascript">
+   function map_init_basic (map, options) {
+
+    // map.invalidateSize()
+   	var markers = L.markerClusterGroup();
+
+    console.log( "first success" )
+    dataurl = 'http://localhost:8000/api/gauges/'
+    var gauges = $.ajax({
+         url:dataurl,
+         dataType:'json',
+         success: console.log('Successfully loaded gauge data')
+    });
+
+    $.when(gauges).done(function() {
+
+        var geoJsonLayer = L.geoJson(gauges.responseJSON, {
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<h6><a href="https://www.dwa.gov.za/Hydrology/Verified/HyDataSets.aspx?Station=' +
+                    feature.properties.dws_id + '&SiteDesc=RIV" target="_blank">' + feature.properties.dws_id +
+                    '</a></h4>' +
+                    '<table class="table table-sm"><tr><td>Start Date:</td><td>' + feature.properties.obsStart +
+                    '</td></tr><tr><td>End Date:</td><td>' + feature.properties.obsEnd +
+                    '</td></tr><tr><td colspan="2"><a href="https://www.dwa.gov.za/Hydrology/Verified/CGI-BIN/HIS/Photos/' +
+                    feature.properties.dws_id + '.JPG" target="_blank"><img src="https://www.dwa.gov.za/Hydrology/Verified/CGI-BIN/HIS/Photos/' +
+                    feature.properties.dws_id + '.JPG" alt="Image loading or no image available" width="200"/></a></tr></table>');
+            }
+        });
+        markers.addLayer(geoJsonLayer);
+
+    });
+
+    map.addLayer(markers)
+    function invalidate_maps() {
+      for (var i=0; i<window.maps.length; i++) {
+        window.maps[i].invalidateSize();
+      }
+    }
+}
+</script>
+<!-- </div> -->
+{% endblock %}

@@ -14,6 +14,8 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR,'static')
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +27,7 @@ SECRET_KEY = 'wugg63l6-dz!f)$y^64uc(sw569wyl(pnwuh15#f4a$j=u=n77'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -37,9 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
+    'gaugedata.apps.GaugedataConfig',
     'NFSP_Website.apps.NfspWebsiteConfig',
     'gebruikers.apps.GebruikersConfig',
+    'leaflet',
     'rest_framework',
+    'rest_framework_gis',
     'crispy_forms',
 ]
 
@@ -58,7 +64,7 @@ ROOT_URLCONF = 'NFSPWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [TEMPLATE_DIR,]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -80,14 +86,25 @@ WSGI_APPLICATION = 'NFSPWebsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'geodjango',
+        'USER': 'nfsp',
+        'PASSWORD': 'D3s1gn-Fl0od+Estimat1on',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+# PASSWORD_HASHERS = [
+#     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+#     'django.contrib.auth.hashers.BCryptPasswordHasher',
+#     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+#     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+# ]
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -108,7 +125,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-uk'
+LANGUAGE_CODE = 'en-gb'
 
 TIME_ZONE = 'Africa/Johannesburg'
 
@@ -123,6 +140,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -137,3 +155,28 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # ROOT_HOSTCONF = 'UserManagement.hosts'
 #
 # DEFAULT_HOST = 'www'
+
+LEAFLET_CONFIG = {
+    'SPATIAL_EXTENT': (10.00, -35.00, 40.00, -20.00),
+    'DEFAULT_CENTER': (-29.9, 31.00),
+    'DEFAULT_ZOOM': 6,
+    'MIN_ZOOM': 3,
+    'MAX_ZOOM': 20,
+    'SCALE': 'metric',
+    # 'SRID': 4326,
+    'TILES': [("OpenStreetMap", 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {'attribution': '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                'maxZoom': 19}),
+                ("Esri Imagery", 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                {'attribution': 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}),
+                ("Terrain", 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.{ext}',
+                            {'attribution': 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                            'subdomains': 'abcd',
+                            'minZoom': 0,
+                            'maxZoom': 18,
+                            'ext': 'png'})
+                ]
+
+    #
+    # 'TILES_EXTENT': [14.0300, -50.3400, 41.1600, -22.1400],
+}
