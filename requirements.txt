@@ -1,4 +1,6 @@
 django
+numpy
+pandas
 gunicorn
 django-heroku
 djangorestframework
