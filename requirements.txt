@@ -6,5 +6,4 @@ djangorestframework
 djangorestframework-gis
 django-leaflet
 django-crispy-forms
-pyproj
-geos
+whitenoise
