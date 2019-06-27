@@ -35,7 +35,7 @@ SECRET_KEY = 'wugg63l6-dz!f)$y^64uc(sw569wyl(pnwuh15#f4a$j=u=n77'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'nfsp.herokuapp.com']
+ALLOWED_HOSTS = ['nfsp.herokuapp.com']
 
 
 # Application definition
