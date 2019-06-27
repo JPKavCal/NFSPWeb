@@ -21,6 +21,7 @@ GDAL_LIBRARY_PATH = environ.get('GDAL_LIBRARY_PATH')
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 
 # Quick-start development settings - unsuitable for production
