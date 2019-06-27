@@ -8,4 +8,3 @@ django-leaflet
 django-crispy-forms
 pyproj
 geos
-gdal==2.3.0
