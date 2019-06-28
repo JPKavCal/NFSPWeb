@@ -28,7 +28,9 @@
                 <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                <button type="button" class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Sign up!
+                </button>
               </div>
             </div>
           </form>
@@ -44,28 +46,28 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
+              <i class="icon-graduation m-auto text-primary"></i>
             </div>
-            <h3>Fully Responsive</h3>
-            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+            <h3>Collaborative</h3>
+            <p class="lead mb-0">Devised by the greatest minds in South Africa</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-graduation m-auto text-primary"></i>
+              <i class="icon-layers m-auto text-primary"></i>
             </div>
-            <h3>Bootstrap 4 Ready</h3>
-            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+            <h3>Latest Research</h3>
+            <p class="lead mb-0">Based on the latest publications</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
+              <i class="icon-arrow-down-circle m-auto text-primary"></i>
             </div>
-            <h3>Easy to Use</h3>
-            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+            <h3>Downloadable Datasets</h3>
+            <p class="lead mb-0">Ready to use in your models</p>
           </div>
         </div>
       </div>
@@ -79,22 +81,22 @@
 
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'nfsp/img/bg-showcase-1.jpg' %});"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          <h2>Some info here</h2>
+          <p class="lead mb-0">We can describe projects here</p>
         </div>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static 'nfsp/img/bg-showcase-2.jpg' %});"></div>
         <div class="col-lg-6 my-auto showcase-text">
-          <h2>Updated For Bootstrap 4</h2>
-          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          <h2 style="text-align: right" >Research Team</h2>
+          <p class="lead mb-0" style="text-align: right">Briefly discuss the team structure here</p>
         </div>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'nfsp/img/bg-showcase-3.jpg' %});"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+          <h2>Local Knowledge</h2>
+          <p class="lead mb-0">Where local knowledge and global methods collide</p>
         </div>
       </div>
     </div>
@@ -108,22 +110,19 @@
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="http://www.dwa.gov.za/default.aspx"><img class="img-fluid mb-3" src="{% static 'nfsp/images/DWS_logo.jpg' %}" alt=""></a>
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            <h5>DWS</h5>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="http://www.wrc.org.za/"><img class="img-fluid mb-3" src="{% static 'nfsp/images/WRC_logo.jpg' %}" alt=""></a>
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            <h5>WRC</h5>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="https://www.sancold.org.za/"><img class="img-fluid mb-3" src="{% static 'nfsp/images/SANCOLD_logo.jpeg' %}" alt=""></a>
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            <h5>SANCOLD</h5>
           </div>
         </div>
       </div>
@@ -131,22 +130,19 @@
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="https://www.ukzn.ac.za/"><img class="img-fluid mb-3" src="{% static 'nfsp/images/UKZN_logo.png' %}" alt=""></a>
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            <h5>University of KwaZulu-Natal</h5>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="https://www.cut.ac.za/"><img class="img-fluid mb-3" src="{% static 'nfsp/images/CUT_logo.png' %}" alt=""></a>
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            <h5>Central University of Technology</h5>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="http://www.sun.ac.za/english"><img class="img-fluid mb-3" src="{% static 'nfsp/images/SU_logo.jpg' %}" alt=""></a>
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            <h5>Stellenbosch University</h5>
           </div>
         </div>
       </div>
@@ -156,25 +152,25 @@
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center" style="background-image: url({% static 'nfsp/img/bg-masthead.jpg' %})">
     <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Not implemented yet...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Thanks for the interest... We have however not implemented our e-mail sign up as yet. Please check back again at a later stage.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
 {% endblock %}
