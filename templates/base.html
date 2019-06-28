@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id='myNavbar'>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#projectsModal">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'NFSP_Website:team' %}">Team</a>
@@ -64,7 +64,7 @@
                                 <a class="dropdown-item" href="{% url 'UserHandler:logout' %}">Logout</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-user-astronaut"></i> Profile</a>
                             {% else %}
-                                <a class="dropdown-item" href="{% url 'UserHandler:register' %}"><i class="fas fa-user-plus"></i> Sign Up</a>
+                                <a class="dropdown-item disabled" href="{% url 'UserHandler:register' %}"><i class="fas fa-user-plus"></i> Sign Up</a>
                                 <a class="dropdown-item" href="{% url 'UserHandler:user_login' %}"><i class="fas fa-sign-in-alt"></i> Login</a>
                             {% endif %}
                         </div>
@@ -89,5 +89,24 @@
             </div>
         </footer>
     </body>
+
+<div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Not implemented yet...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        The idea is to create a page that showcases the Prof's list of priority projects and work being done.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

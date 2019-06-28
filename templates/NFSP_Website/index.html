@@ -21,20 +21,26 @@
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-5">South African National Flood Studies Programme </h1>
         </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        {% if not user.is_authenticated %}
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
                 <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#signupModal">
                     Sign up!
                 </button>
               </div>
             </div>
           </form>
         </div>
+        {% else %}
+            <div class="col-xl-9 mx-auto">
+                <h4 class="mb-5">Welcome {{ user.first_name }}</h4>
+            </div>
+        {% endif %}
       </div>
     </div>
   </header>
@@ -154,7 +160,7 @@
     <div class="overlay"></div>
   </section>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
