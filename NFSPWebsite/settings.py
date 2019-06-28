@@ -39,7 +39,7 @@ if os.path.isfile(dotenv_file):
 try:
     SECRET_KEY = os.environ['SECRET_KEY']
 except KeyError:
-    with open('./.secret_key') as f:
+    with open('./.secret_key2') as f:
         SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
