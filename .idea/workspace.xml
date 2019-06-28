@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/images/Katelyn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/images/Katelyn.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/images/Thomas_Kjeldsen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/images/Thomas_Kjeldsen.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/images/thomas-james-rowe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/images/thomas-james-rowe.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/bg-masthead.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/img/bg-masthead.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/bg-showcase-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/img/bg-showcase-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/bg-showcase-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/img/bg-showcase-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/bg-showcase-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/nfsp/img/bg-showcase-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/testimonials-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/testimonials-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nfsp/img/testimonials-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/team.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="279">
+              <caret line="59" column="69" lean-forward="true" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -305,7 +292,7 @@
       <workItem from="1561659455930" duration="3917000" />
       <workItem from="1561663844394" duration="5032000" />
       <workItem from="1561668892201" duration="4086000" />
-      <workItem from="1561719352364" duration="4072000" />
+      <workItem from="1561719352364" duration="4667000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -339,7 +326,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60681000" />
+    <option name="totallyTimeSpent" value="61276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +341,7 @@
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.16221985" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.16221985" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
       <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -368,7 +355,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010941" side_tool="true" weight="0.33045357" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.432319" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.432319" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="279">
+          <caret line="59" column="69" lean-forward="true" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
         </state>
       </provider>
     </entry>
