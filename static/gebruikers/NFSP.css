@@ -229,3 +229,8 @@ footer {
     color: #a5a5a5;
     letter-spacing: 1px;
 }
+
+.nav-pills .nav-link {
+    background-color: rgba(61, 61, 61, 0.5);
+    color: white;
+}

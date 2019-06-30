@@ -117,6 +117,8 @@ DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 #     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 # ]
 
+LOGIN_URL = '/users/user_login/'
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {

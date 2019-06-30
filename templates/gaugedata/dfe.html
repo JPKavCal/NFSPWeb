@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load leaflet_tags %}
+{% block body_block %}
+
+    <div class="jumbotron">
+      <h1 class="jumbotron-heading">Design Flood Estimation</h1>
+      <p class="lead text-muted">To be completed...</p>
+    </div>
+
+<div>
+
+  <ul class="nav nav-pills nav-justified">
+    <li role="presentation" class="nav-item"><a class="nav-link active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#Map" aria-controls="Map" role="tab" data-toggle="tab">Map</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#RM" aria-controls="RM" role="tab" data-toggle="tab">RM</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#ARM" aria-controls="ARM" role="tab" data-toggle="tab">ARM</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#SDF" aria-controls="SDF" role="tab" data-toggle="tab">SDF</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#SCS" aria-controls="SCS" role="tab" data-toggle="tab">SCS</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#EMP" aria-controls="EMP" role="tab" data-toggle="tab">EMP</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#UH" aria-controls="UH" role="tab" data-toggle="tab">UH</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Stats</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link" href="#Results" aria-controls="Results" role="tab" data-toggle="tab">Results</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="catch_param">
+      Info Here
+      <p>Insert option for automatic calculation...</p>
+
+      <table>
+{#        {{catchment_data_form.as_table}}#}
+      </table>
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="Map">
+      Map view here
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="RM">
+      Rational Method
+
+      <table>
+{#        {{rm_form}}#}
+      </table>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="ARM">Alternative RM</div>
+    <div role="tabpanel" class="tab-pane" id="SDF">SDF method</div>
+    <div role="tabpanel" class="tab-pane" id="SCS">SCS method</div>
+    <div role="tabpanel" class="tab-pane" id="EMP">Empirical methods</div>
+    <div role="tabpanel" class="tab-pane" id="UH">Unit Hydrograph</div>
+    <div role="tabpanel" class="tab-pane" id="Stats">Statistical analysis here</div>
+    <div role="tabpanel" class="tab-pane" id="Results">Output results here</div>
+  </div>
+
+</div>
+
+
+{% endblock %}
