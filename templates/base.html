@@ -2,6 +2,7 @@
 
 {% load static %}
 
+<html>
     <head>
         <meta charset="utf-8">
         <title>NFSP {% block title %}{% endblock %}</title>
@@ -20,10 +21,9 @@
         {% endblock %}
     </head>
 
-<html>
     <body {% block bg %}{% endblock %}>
         <nav class="navbar fixed-bottom navbar-expand-md bg-dark navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id='myNavbar'>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#projectsModal">Projects</a>
+                        <a class="nav-link" href="{% url 'NFSP_Website:projects' %}">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'NFSP_Website:team' %}">Team</a>
@@ -76,9 +76,9 @@
         {% block body_block %}
         {% endblock %}
 
-        <div class="smloverlay d-md-none">
-            <div id="overlay_text">Oops... We haven't quite nailed down the site for this size screen. Please check back later</div>
-        </div>
+{#        <div class="smloverlay d-md-none">#}
+{#            <div id="overlay_text">Oops... We haven't quite nailed down the site for this size screen. Please check back later</div>#}
+{#        </div>#}
 
         <footer class="page-footer font-small blue fixed-top">
             <div class="footer-copyright text-center py-2">
@@ -88,25 +88,25 @@
                 <a href="mailto:JPKavanaghCalitz@gmail.com"><i class="fas fa-envelope fa-lg"></i></a>
             </div>
         </footer>
-    </body>
 
-<div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Not implemented yet...</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        The idea is to create a page that showcases the Prof's list of priority projects and work being done.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Not implemented yet...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The idea is to create a page that showcases the Prof's list of priority projects and work being done.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
 
 </html>

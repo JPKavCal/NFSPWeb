@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+
+
+{#{% block header %}#}
+{#  <link href="{% static 'projects.css' %}" rel="stylesheet">#}
+{#{% endblock %}#}
+
+
+
+{% block body_block %}
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Projects</h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div id="project_album" class="container">
+
+          <div class="row my-2 justify-content-center">
+            <div class="col-md-4 ">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>Project 1</h5>
+                  <p class="card-text">Rainfall Data Inventory, Access, Database Population, Infilling and  Quality Control</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj1" aria-expanded="false" aria-controls="collapseProj1">
+                        View
+                      </button>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>Project 2</h5>
+                  <p class="card-text">Flow/Discharge Data Inventory, Access, Database Population,  Quality Control & Extension</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj2" aria-expanded="false" aria-controls="collapseProj2">
+                        View
+                      </button>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>Project 3</h5>
+                  <p class="card-text">Update point design rainfall, temporal distributions and ARF's for South Africa, including climate change</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj3" aria-expanded="false" aria-controls="collapseProj3">
+                        View
+                      </button>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapseProj1" data-parent="#project_album">
+              <div class="card card-body">
+                <h5>Description</h5>
+                  <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                <h5>Focus Area</h5>
+                  <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                <h5>Progress</h5>
+                  <p>Rainfall and climate data for NFSP requested from SAWS.</p>
+                <h5>More...</h5>
+                  <p>More information...</p>
+              </div>
+            </div>
+            <div class="collapse" id="collapseProj2" data-parent="#project_album">
+              <div class="card card-body">
+                <h5>Description</h5>
+                  <p>Compile station and catchment attributes;  Review and extend stage-discharge relationships for strategic streamflow gauging stations and re-calculate/estimate missing historically measured flood discharges, both at-site and at upstream and downstream gauges.</p>
+              </div>
+            </div>
+            <div class="collapse" id="collapseProj3" data-parent="#project_album">
+              <div class="card card-body">
+                <h5>Description</h5>
+                  <p>Further develop regional approach with updated rainfall data and estimate for low exceedance probabilities (up to 10 000 year RI) and develop ARF's for South Africa</p>
+              </div>
+            </div>
+
+          <div class="row my-2 justify-content-center">
+            <div class="col-md-4 ">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>Project 4</h5>
+                  <p class="card-text">Develop / refine regionalised / pooled Index Flood methods</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj4" aria-expanded="false" aria-controls="collapseProj4">
+                        View
+                      </button>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>Project 5</h5>
+                  <p class="card-text">Develop a fully probabilistic Joint Peak-Volume method</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj5" aria-expanded="false" aria-controls="collapseProj5">
+                        View
+                      </button>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>Project 6</h5>
+                  <p class="card-text">Create web-based portal for access data, information and methods</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj6" aria-expanded="false" aria-controls="collapseProj6">
+                        View
+                      </button>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapseProj4" data-parent="#project_album">
+              <div class="card card-body">
+                <h5>Description</h5>
+                  <p>Identify homogenous flood regions and develop regionalised pooled flood statistics/growth curves, including  station-year-based annual exceedence probability methodology for extreme floods</p>
+              </div>
+            </div>
+            <div class="collapse" id="collapseProj5" data-parent="#project_album">
+              <div class="card card-body">
+                <h5>Description</h5>
+                  <p>Render the existing JPV method fully probabilistic by means of bivariate Copula probability theory and refined  regionalisation from Project 4</p>
+              </div>
+            </div>
+            <div class="collapse" id="collapseProj6" data-parent="#project_album">
+              <div class="card card-body">
+                <h5>Description</h5>
+                  <p>Create structure and GIS databases to serve available data and methods to practitioners and researchers and to update the portal with new data and methods</p>
+              </div>
+            </div>
+
+          <div class="row my-2 justify-content-center">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5>More projects</h5>
+                  <p class="card-text">Still to populate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <script>
+        $(document).on('shown.bs.collapse', function(event){
+            //console.log( "in! print e: " +event.type);
+            event.target.scrollIntoView();
+        });
+    </script>
+
+{% endblock %}
