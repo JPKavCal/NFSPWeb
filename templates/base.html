@@ -22,12 +22,12 @@
     </head>
 
     <body {% block bg %}{% endblock %}>
-        <nav class="navbar fixed-bottom navbar-expand-md bg-dark navbar-dark">
+        <nav class="navbar fixed-bottom navbar-expand-md bg-dark navbar-dark py-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand" href="{% url 'NFSP_Website:home' %}"><img src="/static/nfsp/images/logo.png" height="50"/></a>
+            <a class="navbar-brand" href="{% url 'NFSP_Website:home' %}"><img src="/static/nfsp/images/logo.png" height="40"/></a>
 
             <div class="collapse navbar-collapse" id='myNavbar'>
                 <ul class="navbar-nav mr-auto">
@@ -81,8 +81,8 @@
 {#            <div id="overlay_text">Oops... We haven't quite nailed down the site for this size screen. Please check back later</div>#}
 {#        </div>#}
 
-        <footer class="page-footer font-small blue fixed-top">
-            <div class="footer-copyright text-center py-2">
+        <footer class="page-footer font-small blue fixed-top align-text-middle">
+            <div class="footer-copyright text-center py-0">
                 Page still in development. For more information check me out on
                 <a href="https://www.linkedin.com/in/johannes-pieter-calitz-809a1b48"><i class="fab fa-linkedin fa-lg"></i></a>,
                 or drop me an
@@ -91,5 +91,8 @@
         </footer>
 
     </body>
+
+{% block scriptblock %}
+{% endblock %}
 
 </html>

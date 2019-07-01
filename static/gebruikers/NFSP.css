@@ -16,6 +16,7 @@ html, body {
 }
 footer {
     background-color: rgba(133, 133, 133, 0.8);
+    min-height: 50px;
 }
 #main {
     width:  100%;
@@ -24,7 +25,13 @@ footer {
 
 #gauges_map {
     width:  100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
+    z-index: 0;
+}
+
+#dfe_map {
+    width:  100%;
+    height: 350px;
     z-index: 0;
 }
 
@@ -42,9 +49,9 @@ footer {
     margin-bottom: 0px;
     z-index: 9;
     border: 0;
-    height: 50px;
+    height: auto;
     font-size: 12px !important;
-    line-height: 1.42857143 !important;
+    line-height: 1.2 !important;
     letter-spacing: 2px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
@@ -237,5 +244,5 @@ footer {
   /* Negative indent footer by its height */
   margin: 0px auto 0px;
   /* Pad bottom by footer height */
-  padding: 40px 0 50px;
+  padding: 50px 0 50px;
 }

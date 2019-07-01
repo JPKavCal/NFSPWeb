@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
 {% load leaflet_tags %}
+{% load static %}
+
+{% block title %}- K5/2748 DFE{% endblock %}
+
+{% block header %}
+    {% leaflet_js %}
+    {% leaflet_css %}
+    <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.css' %}" />
+    <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.Default.css' %}" />
+    <script src="{% static 'gaugedata/leaflet.markercluster-src.js' %}"></script>
+{% endblock %}
+
 {% block body_block %}
 
     <div class="row mx-0">
@@ -21,10 +33,9 @@
 
 
             </form>
-            <input id="test_f" type="text" class="form-control" placeholder="Username" aria-label="Username">
         </div>
-        <div class="col-md-6 py-4 bg-info">
-            <p>Map here</p>
+        <div class="col-md-6 p-0">
+            {% leaflet_map "dfe_map" callback="map_init_basic" %}
         </div>
     </div>
 
@@ -73,10 +84,21 @@
 
 </div>
 
-    <script>
-        $("#station_dd").change(function(){
-            $("#test_f").val($("#station_dd").val());
-        });
-    </script>
+{% endblock %}
 
+{% block scriptblock %}
+    <script>
+        {#$("#station_dd").change(function(){#}
+        {#    $("#test_f").val($("#station_dd").val());#}
+        {# });#}
+
+        function map_init_basic (map, options) {
+            map.dragging.disable();
+            map.touchZoom.disable();
+            map.doubleClickZoom.disable();
+            map.scrollWheelZoom.disable();
+            map.zoomControl.remove();
+            map.resetviewControl.remove();
+        }
+    </script>
 {% endblock %}
