@@ -2,24 +2,44 @@
 {% load leaflet_tags %}
 {% block body_block %}
 
-    <div class="jumbotron">
-      <h1 class="jumbotron-heading">Design Flood Estimation</h1>
-      <p class="lead text-muted">To be completed...</p>
+    <div class="row mx-0">
+        <div class="col-md-6 jumbotron py-4 mb-0">
+          <h1 class="jumbotron-heading">Design Flood Estimation</h1>
+          <p class="lead text-muted">To be completed...</p>
+            <form method="POST">
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Select Station</span>
+              </div>
+              <select class="rounded-0" name="station_id" id="station_dd">
+                {% for gauge in gauges %}
+                    <option value="{{ gauge.pk }}">{{ gauge.pk }}</option>
+                {% endfor %}
+                </select>
+            </div>
+
+
+            </form>
+            <input id="test_f" type="text" class="form-control" placeholder="Username" aria-label="Username">
+        </div>
+        <div class="col-md-6 py-4 bg-info">
+            <p>Map here</p>
+        </div>
     </div>
 
 <div>
 
   <ul class="nav nav-pills nav-justified">
-    <li role="presentation" class="nav-item"><a class="nav-link active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#Map" aria-controls="Map" role="tab" data-toggle="tab">Map</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#RM" aria-controls="RM" role="tab" data-toggle="tab">RM</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#ARM" aria-controls="ARM" role="tab" data-toggle="tab">ARM</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#SDF" aria-controls="SDF" role="tab" data-toggle="tab">SDF</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#SCS" aria-controls="SCS" role="tab" data-toggle="tab">SCS</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#EMP" aria-controls="EMP" role="tab" data-toggle="tab">EMP</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#UH" aria-controls="UH" role="tab" data-toggle="tab">UH</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Stats</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link" href="#Results" aria-controls="Results" role="tab" data-toggle="tab">Results</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0 active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#RM" aria-controls="RM" role="tab" data-toggle="tab">RM</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#ARM" aria-controls="ARM" role="tab" data-toggle="tab">ARM</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SDF" aria-controls="SDF" role="tab" data-toggle="tab">SDF</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SCS" aria-controls="SCS" role="tab" data-toggle="tab">SCS</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#EMP" aria-controls="EMP" role="tab" data-toggle="tab">EMP</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#UH" aria-controls="UH" role="tab" data-toggle="tab">UH</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Stats</a></li>
+    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Results" aria-controls="Results" role="tab" data-toggle="tab">Results</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -32,10 +52,6 @@
 {#        {{catchment_data_form.as_table}}#}
       </table>
 
-
-    </div>
-    <div role="tabpanel" class="tab-pane" id="Map">
-      Map view here
 
     </div>
     <div role="tabpanel" class="tab-pane" id="RM">
@@ -57,5 +73,10 @@
 
 </div>
 
+    <script>
+        $("#station_dd").change(function(){
+            $("#test_f").val($("#station_dd").val());
+        });
+    </script>
 
 {% endblock %}
