@@ -5,21 +5,24 @@
 
 {% block body_block %}
 
-    <main role="main" >
+    <div id="main" class="d-flex flex-column">
 
         <div class="jumbotron py-4 mb-0">
           <h1 class="jumbotron-heading">Projects</h1>
           <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
         </div>
 
-      <div class="album py-3 bg-dark">
+      <div class="album py-3 bg-dark flex-fill">
         <div id="project_album" class="container">
 
           <div class="row my-2 justify-content-center">
             <div class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h5>Project 1</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5>Project 1</h5>
+                        <span class="badge badge-danger">High</span>
+                    </div>
                   <p class="card-text">Rainfall Data Inventory, Access, Database Population, Infilling and  Quality Control</p>
                     <div class="collapse pb-2" id="collapseProj1" data-parent="#project_album">
                       <div class="card card-body">
@@ -45,7 +48,10 @@
             <div class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h5>Project 2</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5>Project 2</h5>
+                        <span class="badge badge-danger">High</span>
+                    </div>
                   <p class="card-text">Flow/Discharge Data Inventory, Access, Database Population,  Quality Control & Extension</p>
                     <div class="collapse pb-2" id="collapseProj2" data-parent="#project_album">
                       <div class="card card-body">
@@ -65,7 +71,10 @@
             <div class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h5>Project 3</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5>Project 3</h5>
+                        <span class="badge badge-danger">High</span>
+                    </div>
                   <p class="card-text">Update point design rainfall, temporal distributions and ARF's for South Africa, including climate change</p>
                     <div class="collapse pb-2" id="collapseProj3" data-parent="#project_album">
                       <div class="card card-body">
@@ -85,7 +94,10 @@
             <div class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h5>Project 4</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5>Project 4</h5>
+                        <span class="badge badge-danger">High</span>
+                    </div>
                   <p class="card-text">Develop / refine regionalised / pooled Index Flood methods</p>
                     <div class="collapse pb-2" id="collapseProj4" data-parent="#project_album">
                       <div class="card card-body">
@@ -105,7 +117,10 @@
             <div class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h5>Project 5</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5>Project 5</h5>
+                        <span class="badge badge-danger">High</span>
+                    </div>
                   <p class="card-text">Develop a fully probabilistic Joint Peak-Volume method</p>
                     <div class="collapse pb-2" id="collapseProj5" data-parent="#project_album">
                       <div class="card card-body">
@@ -125,7 +140,10 @@
             <div class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h5>Project 6</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5>Project 6</h5>
+                        <span class="badge badge-warning">Medium</span>
+                    </div>
                   <p class="card-text">Create web-based portal for access data, information and methods</p>
                     <div class="collapse pb-2" id="collapseProj6" data-parent="#project_album">
                       <div class="card card-body">
@@ -158,7 +176,7 @@
         </div>
       </div>
 
-    </main>
+    </div>
 
 {#    <script>#}
 {#        $(document).on('shown.bs.collapse', function(event){#}

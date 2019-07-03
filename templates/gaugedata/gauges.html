@@ -28,22 +28,24 @@
     // map.invalidateSize()
    	var markers = L.markerClusterGroup();
 
-    console.log( "first success" )
     dataurl = '{% fullurl "NFSP_Website:home" %}api/gauges'
-       console.log(dataurl)
     var gauges = $.ajax({
-         url:dataurl,
+        headers: {"X-CSRFToken": getCookie('csrftoken')},
+        url:dataurl,
          dataType:'json',
-         success: console.log('Successfully loaded gauge data')
     });
 
     $.when(gauges).done(function() {
 
         var geoJsonLayer = L.geoJson(gauges.responseJSON, {
             onEachFeature: function (feature, layer) {
-                layer.bindPopup('<h6><a href="https://www.dwa.gov.za/Hydrology/Verified/HyDataSets.aspx?Station=' +
-                    feature.properties.dws_id + '&SiteDesc=RIV" target="_blank">' + feature.properties.dws_id +
-                    '</a></h4>' +
+                layer.bindPopup('<h6>' + feature.properties.dws_id +
+                    '</h6>' +
+                    '<button class="badge badge-light" onclick="window.location.href = ' +
+                    '\'https://www.dwa.gov.za/Hydrology/Verified/HyDataSets.aspx?Station=' +
+                    feature.properties.dws_id + '&SiteDesc=RIV\'">DWS Site</button>' +
+                    '<form action="/K52748/dfe/" method="post">{% csrf_token %}' +
+                    '<button class="badge badge-info pb-1" type="submit" name="station" value="' + feature.properties.dws_id + '">Details</button></form> <br>' +
                     '<table class="table table-sm"><tr><td>Start Date:</td><td>' + feature.properties.obsStart +
                     '</td></tr><tr><td>End Date:</td><td>' + feature.properties.obsEnd +
                     '</td></tr><tr><td colspan="2"><a href="https://www.dwa.gov.za/Hydrology/Verified/CGI-BIN/HIS/Photos/' +

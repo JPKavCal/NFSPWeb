@@ -19,16 +19,29 @@
           <h1 class="jumbotron-heading">Design Flood Estimation</h1>
           <p class="lead text-muted">To be completed...</p>
             <form method="POST">
+            {% csrf_token %}
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">Select Station</span>
               </div>
-              <select class="rounded-0" name="station_id" id="station_dd">
+              <select class="rounded-0" id="station_dd">
+                    <option value=""></option>
                 {% for gauge in gauges %}
                     <option value="{{ gauge.pk }}">{{ gauge.pk }}</option>
                 {% endfor %}
                 </select>
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Lat</span>
+              </div>
+              <input type="text" class="form-control" id="Lat" readonly>
+              <div class="input-group-append">
+                <span class="input-group-text">Lon</span>
+              </div>
+              <input type="text" class="form-control" id="Lon" readonly>
             </div>
 
 
@@ -88,9 +101,25 @@
 
 {% block scriptblock %}
     <script>
-        {#$("#station_dd").change(function(){#}
-        {#    $("#test_f").val($("#station_dd").val());#}
-        {# });#}
+
+        function getStationData() {
+            $.ajax({
+                headers: {"X-CSRFToken": getCookie('csrftoken')},
+                method: "POST",
+                url:'{% url "gaugedata:gauged" %}',
+                data: { 'station': $("#station_dd").val()},
+                success: function(data) {
+                    $("#Lat").val(data.lat);
+                    $("#Lon").val(data.lon);
+                }
+            })
+        }
+
+
+
+        $("#station_dd").change(function() {
+            getStationData()
+        });
 
         function map_init_basic (map, options) {
             map.dragging.disable();
@@ -100,5 +129,11 @@
             map.zoomControl.remove();
             map.resetviewControl.remove();
         }
+
+        $(document).ready(function(){
+            $("#station_dd").val("{{ name }}");
+            getStationData();
+        });
+
     </script>
 {% endblock %}

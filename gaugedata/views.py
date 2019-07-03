@@ -1,7 +1,8 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
+from django.core.exceptions import ObjectDoesNotExist
 from .models import RiverGauge
 from django.contrib.auth.decorators import login_required
-from django.template import RequestContext
+from django.http import JsonResponse
 
 
 # Create your views here.
@@ -14,4 +15,20 @@ def gauges(request):
 def dfe(request):
     gauges = RiverGauge.objects.all()
 
-    return render_to_response('gaugedata/dfe.html', {'gauges': gauges, 'user': request.user})
+    if request.method == 'POST':
+        name = request.POST['station']
+    else:
+        name = None
+
+    return render(request, 'gaugedata/dfe.html', {'gauges': gauges, 'user': request.user, 'name': name})
+
+
+@login_required
+def gauge_data(request):
+    if request.method == 'POST':
+        try:
+            gauge = RiverGauge.objects.get(pk=request.POST['station'])
+            lat, lon = gauge.lat, gauge.lon
+        except ObjectDoesNotExist:
+            lat, lon = 0, 0
+        return JsonResponse({'lat': round(lat, 3), 'lon': round(lon, 3)})

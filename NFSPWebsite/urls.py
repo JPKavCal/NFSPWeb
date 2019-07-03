@@ -16,10 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.models import User
-from django.contrib.gis.geos import Point
 from gaugedata.models import RiverGauge
 from rest_framework import routers, serializers, viewsets
-from rest_framework_gis.serializers import GeoFeatureModelSerializer, GeometrySerializerMethodField
+from rest_framework_gis.serializers import GeoFeatureModelSerializer
 
 
 # Serializers define the API representation.
