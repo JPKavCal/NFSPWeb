@@ -125,16 +125,16 @@
                         markersHolder.push(marker);
                         mapsPlaceholder[0].setView([data.lat, data.lon], 8);
                     }
-                    if (data.poly[0][0] != 0) {
-                        if (polyHolder.length == 1) {
-                            var p = polyHolder.pop();
-                            p.remove();
-                        }
-                        console.log(data.poly);
-                        var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
-                        polyHolder.push(poly);
-                        mapsPlaceholder[0].fitBounds(poly.getBounds());
-                    }
+                    {#if (data.poly[0][0] != 0) {#}
+                    {#    if (polyHolder.length == 1) {#}
+                    {#        var p = polyHolder.pop();#}
+                    {#        p.remove();#}
+                    {#    }#}
+                    {#    console.log(data.poly);#}
+                    {#    var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);#}
+                    {#    polyHolder.push(poly);#}
+                    {#    mapsPlaceholder[0].fitBounds(poly.getBounds());#}
+                    {# }#}
                 }
             })
         }

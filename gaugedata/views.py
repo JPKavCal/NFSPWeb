@@ -32,10 +32,10 @@ def gauge_data(request):
         except ObjectDoesNotExist:
             lat, lon = 0, 0
 
-        try:
-            catch = Catchment.objects.get(pk=request.POST['station'])
-            poly = catch.geom.coords[0]
-        except ObjectDoesNotExist:
-            poly = [[0, 0]]
+        # try:
+        #     catch = Catchment.objects.get(pk=request.POST['station'])
+        #     poly = catch.geom.coords[0]
+        # except ObjectDoesNotExist:
+        #     poly = [[0, 0]]
 
-        return JsonResponse({'lat': round(lat, 3), 'lon': round(lon, 3), 'poly': poly})
+        return JsonResponse({'lat': round(lat, 3), 'lon': round(lon, 3)})  # , 'poly': poly})
