@@ -23,6 +23,13 @@
 
 {% block scriptblock %}
 <script>
+
+    var mapsPlaceholder = [];
+
+    L.Map.addInitHook(function () {
+      mapsPlaceholder.push(this); // Use whatever global scope variable you like.
+    });
+
    function map_init_basic (map, options) {
 
     // map.invalidateSize()
@@ -64,5 +71,8 @@
       }
     }
 }
+
+    var map = mapsPlaceholder.pop();
+
 </script>
 {% endblock %}

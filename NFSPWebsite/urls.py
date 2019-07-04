@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.models import User
-from gaugedata.models import RiverGauge
+from gaugedata.models import RiverGauge, Catchment
 from rest_framework import routers, serializers, viewsets
 from rest_framework_gis.serializers import GeoFeatureModelSerializer
 
@@ -29,18 +29,21 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class RiverGaugeSerializer(GeoFeatureModelSerializer):
-    # renderer_class = JSONRenderer
-
-    # geom = GeometrySerializerMethodField()
-    #
-    # def get_geom(self, obj):
-    #     return Point(obj.geom.coords[1], obj.geom.coords[0])
 
     class Meta:
         model = RiverGauge
         geo_field = 'geom'
         id_field = False
         fields = ('dws_id', 'obsStart', 'obsEnd')
+
+
+class CatchmentSerializer(GeoFeatureModelSerializer):
+
+    class Meta:
+        model = Catchment
+        geo_field = 'geom'
+        id_field = False
+        fields = ('dws_id', 'area', 'arf', 's1085')
 
 
 # ViewSets define the view behavior.
@@ -54,10 +57,16 @@ class RiverGaugeViewSet(viewsets.ModelViewSet):
     serializer_class = RiverGaugeSerializer
 
 
+class CatchmentViewSet(viewsets.ModelViewSet):
+    queryset = Catchment.objects.all()
+    serializer_class = CatchmentSerializer
+
+
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'gauges', RiverGaugeViewSet)
+router.register(r'catchments', CatchmentViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

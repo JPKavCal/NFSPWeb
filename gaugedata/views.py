@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.exceptions import ObjectDoesNotExist
-from .models import RiverGauge
+from .models import RiverGauge, Catchment
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 
@@ -29,6 +29,9 @@ def gauge_data(request):
         try:
             gauge = RiverGauge.objects.get(pk=request.POST['station'])
             lat, lon = gauge.lat, gauge.lon
+            catch = Catchment.objects.get(pk=request.POST['station'])
+            poly = catch.geom.coords[0]
         except ObjectDoesNotExist:
             lat, lon = 0, 0
-        return JsonResponse({'lat': round(lat, 3), 'lon': round(lon, 3)})
+            poly = [[0, 0]]
+        return JsonResponse({'lat': round(lat, 3), 'lon': round(lon, 3), 'poly': poly})

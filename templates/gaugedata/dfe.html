@@ -102,6 +102,10 @@
 {% block scriptblock %}
     <script>
 
+        var mapsPlaceholder = [];
+        var markersHolder = [];
+        var polyHolder = [];
+
         function getStationData() {
             $.ajax({
                 headers: {"X-CSRFToken": getCookie('csrftoken')},
@@ -111,27 +115,46 @@
                 success: function(data) {
                     $("#Lat").val(data.lat);
                     $("#Lon").val(data.lon);
+                    if (data.lat != 0) {
+                        if (markersHolder.length == 1) {
+                            var m = markersHolder.pop();
+                            m.remove();
+                        }
+                        console.log([data.lat, data.lon]);
+                        var marker = L.marker([data.lat, data.lon]).addTo(mapsPlaceholder[0]);
+                        markersHolder.push(marker);
+                        mapsPlaceholder[0].setView([data.lat, data.lon], 8);
+                    }
+                    if (data.poly[0][0] != 0) {
+                        if (polyHolder.length == 1) {
+                            var p = polyHolder.pop();
+                            p.remove();
+                        }
+                        console.log(data.poly);
+                        var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
+                        polyHolder.push(poly);
+                        mapsPlaceholder[0].fitBounds(poly.getBounds());
+                    }
                 }
             })
         }
 
-
-
-        $("#station_dd").change(function() {
-            getStationData()
-        });
-
         function map_init_basic (map, options) {
-            map.dragging.disable();
-            map.touchZoom.disable();
-            map.doubleClickZoom.disable();
-            map.scrollWheelZoom.disable();
-            map.zoomControl.remove();
-            map.resetviewControl.remove();
+            {#map.dragging.disable();#}
+            {#map.touchZoom.disable();#}
+            {#map.doubleClickZoom.disable();#}
+            {#map.scrollWheelZoom.disable();#}
+            {#map.zoomControl.remove();#}
+            {#map.resetviewControl.remove();#}
+            mapsPlaceholder.push(map);
         }
 
         $(document).ready(function(){
             $("#station_dd").val("{{ name }}");
+            getStationData();
+        });
+
+        $("#station_dd").change(function() {
             getStationData();
         });
 
