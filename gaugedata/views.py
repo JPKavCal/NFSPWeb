@@ -29,9 +29,13 @@ def gauge_data(request):
         try:
             gauge = RiverGauge.objects.get(pk=request.POST['station'])
             lat, lon = gauge.lat, gauge.lon
+        except ObjectDoesNotExist:
+            lat, lon = 0, 0
+
+        try:
             catch = Catchment.objects.get(pk=request.POST['station'])
             poly = catch.geom.coords[0]
         except ObjectDoesNotExist:
-            lat, lon = 0, 0
             poly = [[0, 0]]
+
         return JsonResponse({'lat': round(lat, 3), 'lon': round(lon, 3), 'poly': poly})
