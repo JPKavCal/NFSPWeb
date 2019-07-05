@@ -3,6 +3,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from .models import RiverGauge, Catchment
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
+from django.db.models.functions import Substr
 
 
 # Create your views here.
@@ -14,13 +15,17 @@ def gauges(request):
 @login_required
 def dfe(request):
     gauges = RiverGauge.objects.all()
+    region = ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'J', 'K', 'L', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X']
 
     if request.method == 'POST':
         name = request.POST['station']
     else:
         name = None
 
-    return render(request, 'gaugedata/dfe.html', {'gauges': gauges, 'user': request.user, 'name': name})
+    return render(request, 'gaugedata/dfe.html', {'gauges': gauges,
+                                                  'user': request.user,
+                                                  'name': name,
+                                                  'regions': region})
 
 
 @login_required
@@ -39,3 +44,15 @@ def gauge_data(request):
             poly = [[0, 0]]
 
         return JsonResponse({'lat': lat, 'lon': lon, 'poly': poly})
+
+
+@login_required
+def region_data(request):
+    if request.method == 'POST':
+        try:
+            qs = RiverGauge.objects.annotate(fl_name=Substr('dws_id', 1, 1))
+            qs = qs.filter(fl_name=request.POST['region'])
+        except ObjectDoesNotExist:
+            qs = []
+
+        return render(request, 'gaugedata/gauge_dropdown.html', {'gauges': qs})

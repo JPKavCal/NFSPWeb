@@ -27,6 +27,10 @@ footer {
     /*background-color: #858585;*/
 }
 
+#station_dd {
+    width: 150px;
+}
+
 #main {
     width:  100%;
     min-height: calc(100vh - 100px);

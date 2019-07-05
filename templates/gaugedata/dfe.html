@@ -25,13 +25,22 @@
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
+                <span class="input-group-text">Lat</span>
+              </div>
+              <select class="rounded-0" id="region">
+                    <option value=""></option>
+                {% for region in regions %}
+                    <option value="{{ region }}">{{ region }}</option>
+                {% endfor %}
+              </select>
+              <div class="input-group-append">
                 <span class="input-group-text">Select Station</span>
               </div>
               <select class="rounded-0" id="station_dd">
                     <option value=""></option>
-                {% for gauge in gauges %}
-                    <option value="{{ gauge.pk }}">{{ gauge.pk }}</option>
-                {% endfor %}
+{#                {% for gauge in gauges %}#}
+{#                    <option value="{{ gauge.pk }}">{{ gauge.pk }}</option>#}
+{#                {% endfor %}#}
                 </select>
             </div>
 
@@ -109,25 +118,26 @@
         var polyHolder = [];
 
         function map_init_basic (map, options) {
-            {#map.dragging.disable();#}
-            {#map.touchZoom.disable();#}
-            {#map.doubleClickZoom.disable();#}
-            {#map.scrollWheelZoom.disable();#}
-            {#map.zoomControl.remove();#}
             map.resetviewControl.remove();
             mapsPlaceholder.push(map);
-            $("#station_dd").val("{{ name }}");
-            getStationData();
+            if ("{{ name }}".length == 6) {
+                $("#region").val("{{ name }}"[0]);
+            }
+            getRegionData();
+            if (document.getElementById('station_dd').length > 1) {
+                document.getElementById('station_dd').value = "{{ name }}";
+            }
+
         }
 
         function getStationData() {
             mapsPlaceholder[0].spin(true);
             $.ajax({
-                headers: {"X-CSRFToken": getCookie('csrftoken')},
-                method: "POST",
-                url:'{% url "gaugedata:gauged" %}',
-                data: { 'station': $("#station_dd").val()},
-                success: function(data) {
+               headers: {"X-CSRFToken": getCookie('csrftoken')},
+               method: "POST",
+               url:'{% url "gaugedata:gauged" %}',
+               data: { 'station': $("#station_dd").val()},
+               success: function(data) {
                     $("#Lat").val(data.lat);
                     $("#Lon").val(data.lon);
                     if (data.lat != 0) {
@@ -148,16 +158,32 @@
                         polyHolder.push(poly);
                         mapsPlaceholder[0].fitBounds(poly.getBounds());
                     }
-                }
-            }).done(function () {
-                mapsPlaceholder[0].spin(false);
-            })
+            }
+            }).done(function() {
+              mapsPlaceholder[0].spin(false);
+            });
         }
 
-        {#$(document).ready(function(){#}
-        {#    $("#station_dd").val("{{ name }}");#}
-        {#    getStationData();#}
-        {# });#}
+        function getRegionData() {
+            $.ajax({
+                headers: {"X-CSRFToken": getCookie('csrftoken')},
+                method: "POST",
+                url:'{% url "gaugedata:regions" %}',
+                data: { 'region': $("#region").val()},
+                success: function(data) {
+                    $("#station_dd").html(data);
+                }
+            }).done(function() {
+                if ("{{ name }}".length == 6) {
+                    $("#station_dd").val("{{ name }}");
+                    getStationData();
+                }
+            });
+        }
+
+        $("#region").change(function() {
+            getRegionData();
+        });
 
         $("#station_dd").change(function() {
             getStationData();
