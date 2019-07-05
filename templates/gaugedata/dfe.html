@@ -109,6 +109,7 @@
         var polyHolder = [];
 
         function getStationData() {
+            mapsPlaceholder[0].spin(true);
             $.ajax({
                 headers: {"X-CSRFToken": getCookie('csrftoken')},
                 method: "POST",
@@ -136,6 +137,8 @@
                         mapsPlaceholder[0].fitBounds(poly.getBounds());
                     }
                 }
+            }).done(function () {
+                mapsPlaceholder[0].spin(false);
             })
         }
 
@@ -145,7 +148,7 @@
             {#map.doubleClickZoom.disable();#}
             {#map.scrollWheelZoom.disable();#}
             {#map.zoomControl.remove();#}
-            {#map.resetviewControl.remove();#}
+            map.resetviewControl.remove();
             mapsPlaceholder.push(map);
         }
 
@@ -158,9 +161,9 @@
         });
 
         $("#station_dd").change(function() {
-            mapsPlaceholder[0].spin(true);
+
             $.ajax(getStationData()).done(function () {
-                mapsPlaceholder[0].spin(false);
+
             })
         });
 
