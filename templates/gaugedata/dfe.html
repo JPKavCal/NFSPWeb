@@ -154,17 +154,11 @@
 
         $(document).ready(function(){
             $("#station_dd").val("{{ name }}");
-            mapsPlaceholder[0].spin(true);
-            $.ajax(getStationData()).done(function () {
-                mapsPlaceholder[0].spin(false);
-            })
+            getStationData();
         });
 
         $("#station_dd").change(function() {
-
-            $.ajax(getStationData()).done(function () {
-
-            })
+            getStationData();
         });
 
     </script>
