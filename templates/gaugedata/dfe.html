@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.css' %}" />
     <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.Default.css' %}" />
     <script src="{% static 'gaugedata/leaflet.markercluster-src.js' %}"></script>
+    <script src="{% static 'gaugedata/leaflet.spin.min.js' %}"></script>
+    <script src="{% static 'gaugedata/spin.js' %}"></script>
 {% endblock %}
 
 {% block body_block %}
@@ -120,21 +122,19 @@
                             var m = markersHolder.pop();
                             m.remove();
                         }
-                        console.log([data.lat, data.lon]);
                         var marker = L.marker([data.lat, data.lon]).addTo(mapsPlaceholder[0]);
                         markersHolder.push(marker);
                         mapsPlaceholder[0].setView([data.lat, data.lon], 8);
                     }
-                    {#if (data.poly[0][0] != 0) {#}
-                    {#    if (polyHolder.length == 1) {#}
-                    {#        var p = polyHolder.pop();#}
-                    {#        p.remove();#}
-                    {#    }#}
-                    {#    console.log(data.poly);#}
-                    {#    var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);#}
-                    {#    polyHolder.push(poly);#}
-                    {#    mapsPlaceholder[0].fitBounds(poly.getBounds());#}
-                    {# }#}
+                    if (data.poly[0][0] != 0) {
+                        if (polyHolder.length == 1) {
+                            var p = polyHolder.pop();
+                            p.remove();
+                        }
+                        var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
+                        polyHolder.push(poly);
+                        mapsPlaceholder[0].fitBounds(poly.getBounds());
+                    }
                 }
             })
         }
@@ -151,11 +151,17 @@
 
         $(document).ready(function(){
             $("#station_dd").val("{{ name }}");
-            getStationData();
+            mapsPlaceholder[0].spin(true);
+            $.ajax(getStationData()).done(function () {
+                mapsPlaceholder[0].spin(false);
+            })
         });
 
         $("#station_dd").change(function() {
-            getStationData();
+            mapsPlaceholder[0].spin(true);
+            $.ajax(getStationData()).done(function () {
+                mapsPlaceholder[0].spin(false);
+            })
         });
 
     </script>
