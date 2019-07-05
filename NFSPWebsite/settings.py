@@ -172,7 +172,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # DEFAULT_HOST = 'www'
 
 LEAFLET_CONFIG = {
-    # 'SPATIAL_EXTENT': (10.00, -35.00, 40.00, -20.00),
+    'SPATIAL_EXTENT': (10.00, -35.00, 40.00, -20.00),
     'DEFAULT_CENTER': (-29.9, 31.00),
     'DEFAULT_ZOOM': 6,
     'MIN_ZOOM': 3,
@@ -180,18 +180,19 @@ LEAFLET_CONFIG = {
     'SCALE': 'metric',
     # 'SRID': 4326,
     'TILES': [("OpenStreetMap", 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                {'attribution': '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                'maxZoom': 19}),
-                ("Esri Imagery", 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-                {'attribution': 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}),
-                ("Terrain", 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.{ext}',
-                            {'attribution': 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                            'subdomains': 'abcd',
-                            'minZoom': 0,
-                            'maxZoom': 18,
-                            'ext': 'png'})
-                ]
-
-    #
-    # 'TILES_EXTENT': [14.0300, -50.3400, 41.1600, -22.1400],
+              {'attribution': '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+               'maxZoom': 19}),
+              ("Esri Imagery",
+               'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+              {'attribution': 'Tiles &copy; Esri'}),
+              ("Terrain", 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.{ext}',
+               {'attribution': 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, ' +
+                               '<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> ' +
+                               '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">' +
+                               'OpenStreetMap</a>',
+                'subdomains': 'abcd',
+                'minZoom': 0,
+                'maxZoom': 18,
+                'ext': 'png'})
+             ]
 }

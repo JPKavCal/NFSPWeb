@@ -116,6 +116,8 @@
             {#map.zoomControl.remove();#}
             map.resetviewControl.remove();
             mapsPlaceholder.push(map);
+            $("#station_dd").val("{{ name }}");
+            getStationData();
         }
 
         function getStationData() {
@@ -152,10 +154,10 @@
             })
         }
 
-        $(document).ready(function(){
-            $("#station_dd").val("{{ name }}");
-            getStationData();
-        });
+        {#$(document).ready(function(){#}
+        {#    $("#station_dd").val("{{ name }}");#}
+        {#    getStationData();#}
+        {# });#}
 
         $("#station_dd").change(function() {
             getStationData();
