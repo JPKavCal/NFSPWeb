@@ -108,6 +108,16 @@
         var markersHolder = [];
         var polyHolder = [];
 
+        function map_init_basic (map, options) {
+            {#map.dragging.disable();#}
+            {#map.touchZoom.disable();#}
+            {#map.doubleClickZoom.disable();#}
+            {#map.scrollWheelZoom.disable();#}
+            {#map.zoomControl.remove();#}
+            map.resetviewControl.remove();
+            mapsPlaceholder.push(map);
+        }
+
         function getStationData() {
             mapsPlaceholder[0].spin(true);
             $.ajax({
@@ -140,16 +150,6 @@
             }).done(function () {
                 mapsPlaceholder[0].spin(false);
             })
-        }
-
-        function map_init_basic (map, options) {
-            {#map.dragging.disable();#}
-            {#map.touchZoom.disable();#}
-            {#map.doubleClickZoom.disable();#}
-            {#map.scrollWheelZoom.disable();#}
-            {#map.zoomControl.remove();#}
-            map.resetviewControl.remove();
-            mapsPlaceholder.push(map);
         }
 
         $(document).ready(function(){

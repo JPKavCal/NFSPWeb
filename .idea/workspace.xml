@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/NFSPWebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NFSPWebsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/gaugedata/dfe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/dfe.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="154" column="37" lean-forward="true" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="37" />
+            <state relative-caret-position="341">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -296,7 +296,7 @@
       <workItem from="1562268383385" duration="8168000" />
       <workItem from="1562307123996" duration="694000" />
       <workItem from="1562307835215" duration="2318000" />
-      <workItem from="1562310169432" duration="1148000" />
+      <workItem from="1562310169432" duration="1834000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -330,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122793000" />
+    <option name="totallyTimeSpent" value="123479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="154" column="37" lean-forward="true" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="37" />
+        <state relative-caret-position="341">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
