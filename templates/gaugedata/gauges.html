@@ -15,9 +15,7 @@
 
 {% block body_block %}
 
-{#<div id="map">#}
-{% leaflet_map "gauges_map" callback="map_init_basic" %}
-{#</div>#}
+{% leaflet_map "gauges_map" callback="gauges_map_init_basic" %}
 
 {% endblock %}
 
@@ -30,7 +28,7 @@
       mapsPlaceholder.push(this); // Use whatever global scope variable you like.
     });
 
-   function map_init_basic (map, options) {
+   function gauges_map_init_basic (map) {
 
     // map.invalidateSize()
    	var markers = L.markerClusterGroup();

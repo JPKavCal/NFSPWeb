@@ -27,8 +27,8 @@ footer {
     /*background-color: #858585;*/
 }
 
-#station_dd {
-    width: 150px;
+#Lon {
+    margin-left: -1px;
 }
 
 #main {
@@ -44,7 +44,8 @@ footer {
 
 #dfe_map {
     width:  100%;
-    height: 350px;
+    height:  100%;
+    min-height: 350px;
     z-index: 0;
 }
 

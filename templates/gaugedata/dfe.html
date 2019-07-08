@@ -18,25 +18,40 @@
 
     <div class="row mx-0">
         <div class="col-md-6 jumbotron py-4 mb-0">
-          <h1 class="jumbotron-heading">Design Flood Estimation</h1>
-          <p class="lead text-muted">To be completed...</p>
-            <form method="POST">
-            {% csrf_token %}
+            <h1 class="jumbotron-heading">Design Flood Estimation</h1>
+            <p class="lead text-muted">To be completed...</p>
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text">Lat</span>
+                <span class="input-group-text">Select Method</span>
               </div>
-              <select class="rounded-0" id="region">
+              <select class="custom-select" id="dfe_method">
+                    <option value="dws">DWS Station</option>
+                    <option value="latlon">Coordinate - inactive</option>
+                    <option value="manual">Manual - inactive</option>
+              </select>
+            </div>
+
+            <form method="POST">
+            {% csrf_token %}
+
+            <div class="input-group mb-3 dws">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Select Region</span>
+              </div>
+              <select class="custom-select" id="region">
                     <option value=""></option>
                 {% for region in regions %}
                     <option value="{{ region }}">{{ region }}</option>
                 {% endfor %}
               </select>
-              <div class="input-group-append">
+            </div>
+
+            <div class="input-group mb-3 dws">
+              <div class="input-group-prepend">
                 <span class="input-group-text">Select Station</span>
               </div>
-              <select class="rounded-0" id="station_dd">
+              <select class="custom-select" id="station_dd">
                     <option value=""></option>
 {#                {% for gauge in gauges %}#}
 {#                    <option value="{{ gauge.pk }}">{{ gauge.pk }}</option>#}
@@ -44,7 +59,7 @@
                 </select>
             </div>
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 dws latlon">
               <div class="input-group-prepend">
                 <span class="input-group-text">Lat</span>
               </div>
@@ -59,7 +74,7 @@
             </form>
         </div>
         <div class="col-md-6 p-0">
-            {% leaflet_map "dfe_map" callback="map_init_basic" %}
+            {% leaflet_map "dfe_map" callback="dfe_map_init_basic" %}
         </div>
     </div>
 
@@ -117,7 +132,7 @@
         var markersHolder = [];
         var polyHolder = [];
 
-        function map_init_basic (map, options) {
+        function dfe_map_init_basic (map, options) {
             map.resetviewControl.remove();
             mapsPlaceholder.push(map);
             if ("{{ name }}".length == 6) {
@@ -188,6 +203,11 @@
         $("#station_dd").change(function() {
             getStationData();
         });
+
+        {#$("#dfe_method").change(function() {#}
+        {#    $('.colors').hide();#}
+        {#    $('#' + $(this).val()).show();#}
+        {# });#}
 
     </script>
 {% endblock %}
