@@ -1,8 +1,8 @@
 {
   "name": "South Africa National Flood Studies Programme",
   "short_name": "NFSP",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#353a40",
+  "background_color": "#353a40",
   "display": "fullscreen",
   "orientation": "portrait",
   "Scope": "/",

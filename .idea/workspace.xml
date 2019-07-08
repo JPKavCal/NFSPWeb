@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-128x128.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-128x128.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-144x144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-152x152.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-152x152.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-384x384.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-384x384.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-72x72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/icon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/icon-96x96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/manifest.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -61,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="30">
+              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -175,11 +165,11 @@
         <option value="$PROJECT_DIR$/templates/gaugedata/gauge_dropdown.html" />
         <option value="$PROJECT_DIR$/gaugedata/views.py" />
         <option value="$PROJECT_DIR$/templates/gaugedata/gauges.html" />
-        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.css" />
         <option value="$PROJECT_DIR$/templates/gaugedata/dfe.html" />
         <option value="$PROJECT_DIR$/NFSPWebsite/settings.py" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.css" />
         <option value="$PROJECT_DIR$/static/manifest.json" />
       </list>
     </option>
@@ -202,23 +192,6 @@
             <path>
               <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="gaugedata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="gebruikers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -330,7 +303,7 @@
       <workItem from="1562568436276" duration="1877000" />
       <workItem from="1562584622839" duration="2616000" />
       <workItem from="1562612106121" duration="5431000" />
-      <workItem from="1562619076348" duration="660000" />
+      <workItem from="1562619076348" duration="1261000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -364,7 +337,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145207000" />
+    <option name="totallyTimeSpent" value="145808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,7 +352,7 @@
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.1307364" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.1307364" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
       <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,7 +366,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010941" side_tool="true" weight="0.33045357" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.28833693" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.28833693" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32843652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -686,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NFSPWebsite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
@@ -748,10 +714,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
