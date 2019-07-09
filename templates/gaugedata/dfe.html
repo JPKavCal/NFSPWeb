@@ -12,14 +12,17 @@
     <script src="{% static 'gaugedata/leaflet.markercluster-src.js' %}"></script>
     <script src="{% static 'gaugedata/leaflet.spin.min.js' %}"></script>
     <script src="{% static 'gaugedata/spin.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.min.css">
 {% endblock %}
 
 {% block body_block %}
 
     <div class="row mx-0">
         <div class="col-md-6 jumbotron py-4 mb-0">
-            <h1 class="jumbotron-heading">Design Flood Estimation</h1>
-            <p class="lead text-muted">To be completed...</p>
+            <h3 class="jumbotron-heading">Design Flood Estimation</h3>
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -27,7 +30,7 @@
               </div>
               <select class="custom-select" id="dfe_method">
                     <option value="dws">DWS Station</option>
-                    <option value="latlon">Coordinate - inactive</option>
+                    <option value="latlon">Coordinate - click on map</option>
                     <option value="manual">Manual - inactive</option>
               </select>
             </div>
@@ -117,7 +120,54 @@
     <div role="tabpanel" class="tab-pane" id="SCS">SCS method</div>
     <div role="tabpanel" class="tab-pane" id="EMP">Empirical methods</div>
     <div role="tabpanel" class="tab-pane" id="UH">Unit Hydrograph</div>
-    <div role="tabpanel" class="tab-pane" id="Stats">Statistical analysis here</div>
+    <div role="tabpanel" class="tab-pane" id="Stats">
+        <div class="row mx-0">
+            <div class="col-md-6 p-1 my-auto">
+                {{ bokeh_div|safe }}
+
+                {{ bokeh_script|safe }}
+            </div>
+            <div class="col-md-6 p-0">
+                <table class="table table-dark m-0">
+                    <tr>
+                        <th>Frequency analysis results</th>
+                    </tr>
+                    <tr>
+                        <th>RP</th>
+                        <th>Flow (m<sup>3</sup>.s<sup>-1</sup>)</th>
+                    </tr>
+                    <tr>
+                        <th>2yr</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>5yr</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>10yr</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>20yr</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>50yr</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>100yr</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>200yr</th>
+                        <td>50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
     <div role="tabpanel" class="tab-pane" id="Results">Output results here</div>
   </div>
 
@@ -134,6 +184,7 @@
 
         function dfe_map_init_basic (map, options) {
             map.resetviewControl.remove();
+            map.setMinZoom(5)
             mapsPlaceholder.push(map);
             if ("{{ name }}".length == 6) {
                 $("#region").val("{{ name }}"[0]);
@@ -142,6 +193,20 @@
             if (document.getElementById('station_dd').length > 1) {
                 document.getElementById('station_dd').value = "{{ name }}";
             }
+            map.on('click', function(e){
+                if ($("#dfe_method").val() == "latlon") {
+                    if (markersHolder.length == 1) {
+                        var m = markersHolder.pop();
+                        m.remove();
+                    }
+                    var marker = L.marker(e.latlng).addTo(map);
+                    {#console.log(e.latlng)#}
+                    markersHolder.push(marker);
+                    $("#Lat").val(Math.round((e.latlng['lat'] + 0.000001) * 10000) / 10000);
+                    $("#Lon").val(Math.round((e.latlng['lng'] + 0.000001) * 10000) / 10000);
+                }
+
+            });
 
         }
 
@@ -155,20 +220,20 @@
                success: function(data) {
                     $("#Lat").val(data.lat);
                     $("#Lon").val(data.lon);
+                    if (markersHolder.length == 1) {
+                        var m = markersHolder.pop();
+                        m.remove();
+                    }
                     if (data.lat != 0) {
-                        if (markersHolder.length == 1) {
-                            var m = markersHolder.pop();
-                            m.remove();
-                        }
                         var marker = L.marker([data.lat, data.lon]).addTo(mapsPlaceholder[0]);
                         markersHolder.push(marker);
                         mapsPlaceholder[0].setView([data.lat, data.lon], 8);
                     }
+                    if (polyHolder.length == 1) {
+                        var p = polyHolder.pop();
+                        p.remove();
+                    }
                     if (data.poly[0][0] != 0) {
-                        if (polyHolder.length == 1) {
-                            var p = polyHolder.pop();
-                            p.remove();
-                        }
                         var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
                         polyHolder.push(poly);
                         mapsPlaceholder[0].fitBounds(poly.getBounds());
@@ -197,6 +262,8 @@
         }
 
         $("#region").change(function() {
+            $("#Lat").val('');
+            $("#Lon").val('');
             getRegionData();
         });
 
@@ -204,10 +271,12 @@
             getStationData();
         });
 
-        {#$("#dfe_method").change(function() {#}
-        {#    $('.colors').hide();#}
-        {#    $('#' + $(this).val()).show();#}
-        {# });#}
+        $("#dfe_method").change(function() {
+            $("#Lat").val('');
+            $("#Lon").val('');
+            $('.dws').hide();
+            $('.' + $(this).val()).show();
+         });
 
     </script>
 {% endblock %}
