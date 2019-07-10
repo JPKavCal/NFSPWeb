@@ -22,8 +22,13 @@ def gauges(request):
 def dfe(request):
     gauges = RiverGauge.objects.all()
     region = ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'J', 'K', 'L', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X']
-    x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    x = [1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995]
     y = [3, 4, 12, 1, 5, 13, 25, 12, 6, 7]
+
+    TOOLTIPS = [
+        ("Year", "@x"),
+        ("Flow", "@y")
+    ]
 
     if request.method == 'POST':
         name = request.POST['station']
@@ -51,13 +56,14 @@ def dfe(request):
         sizing_mode='stretch_width',
         tools=['pan', 'box_zoom', 'save',
                'reset', 'wheel_zoom'],
-        y_range=Range1d(min(y) * 0.8, max(y) * 1.1, bounds=(min(y) * 0.5, max(y) * 1.3)),
+        y_range=Range1d(min(y) * 0.8, max(y) * 1.1, bounds=(min(y) * 0.5, max(y) * 1.15)),
         x_range=Range1d(min(x), max(x), bounds=(min(x), max(x))),
         x_axis_label="Year",
-        y_axis_label="Peak Flow",
+        y_axis_label="Peak Flow (m³.s⁻¹)",
         # plot_width=450,
         plot_height=400,
-        id='stat_fig'
+        id='stat_fig',
+        tooltips=TOOLTIPS
     )
     plot.line('x', 'y', source=source)
     plot.toolbar.logo = None

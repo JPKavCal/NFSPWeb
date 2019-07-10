@@ -56,9 +56,6 @@
               </div>
               <select class="custom-select" id="station_dd">
                     <option value=""></option>
-{#                {% for gauge in gauges %}#}
-{#                    <option value="{{ gauge.pk }}">{{ gauge.pk }}</option>#}
-{#                {% endfor %}#}
                 </select>
             </div>
 
@@ -182,6 +179,17 @@
         var markersHolder = [];
         var polyHolder = [];
 
+        function clear_map () {
+            if (markersHolder.length == 1) {
+                var m = markersHolder.pop();
+                m.remove();
+            }
+            if (polyHolder.length == 1) {
+                var p = polyHolder.pop();
+                p.remove();
+            }
+        }
+
         function dfe_map_init_basic (map, options) {
             map.resetviewControl.remove();
             map.setMinZoom(5)
@@ -195,15 +203,12 @@
             }
             map.on('click', function(e){
                 if ($("#dfe_method").val() == "latlon") {
-                    if (markersHolder.length == 1) {
-                        var m = markersHolder.pop();
-                        m.remove();
-                    }
+                    clear_map();
                     var marker = L.marker(e.latlng).addTo(map);
-                    {#console.log(e.latlng)#}
                     markersHolder.push(marker);
                     $("#Lat").val(Math.round((e.latlng['lat'] + 0.000001) * 10000) / 10000);
                     $("#Lon").val(Math.round((e.latlng['lng'] + 0.000001) * 10000) / 10000);
+                    map.setView(e.latlng);
                 }
 
             });
@@ -220,18 +225,11 @@
                success: function(data) {
                     $("#Lat").val(data.lat);
                     $("#Lon").val(data.lon);
-                    if (markersHolder.length == 1) {
-                        var m = markersHolder.pop();
-                        m.remove();
-                    }
+                    clear_map();
                     if (data.lat != 0) {
                         var marker = L.marker([data.lat, data.lon]).addTo(mapsPlaceholder[0]);
                         markersHolder.push(marker);
                         mapsPlaceholder[0].setView([data.lat, data.lon], 8);
-                    }
-                    if (polyHolder.length == 1) {
-                        var p = polyHolder.pop();
-                        p.remove();
                     }
                     if (data.poly[0][0] != 0) {
                         var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
@@ -252,6 +250,7 @@
                 data: { 'region': $("#region").val()},
                 success: function(data) {
                     $("#station_dd").html(data);
+                    clear_map();
                 }
             }).done(function() {
                 if ("{{ name }}".length == 6) {
@@ -272,6 +271,7 @@
         });
 
         $("#dfe_method").change(function() {
+            clear_map();
             $("#Lat").val('');
             $("#Lon").val('');
             $('.dws').hide();

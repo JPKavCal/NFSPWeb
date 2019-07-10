@@ -28,6 +28,10 @@
       mapsPlaceholder.push(this); // Use whatever global scope variable you like.
     });
 
+    function clickZoom(e) {
+        mapsPlaceholder[0].setView(e.target.getLatLng());
+    }
+
    function gauges_map_init_basic (map) {
 
     // map.invalidateSize()
@@ -46,30 +50,28 @@
             onEachFeature: function (feature, layer) {
                 layer.bindPopup('<h6>' + feature.properties.dws_id +
                     '</h6>' +
-                    '<button class="badge badge-light" onclick="window.location.href = ' +
-                    '\'https://www.dwa.gov.za/Hydrology/Verified/HyDataSets.aspx?Station=' +
-                    feature.properties.dws_id + '&SiteDesc=RIV\'">DWS Site</button>' +
+                    '<div class="d-flex justify-content-between align-items-center">' +
                     '<form action="/K52748/dfe/" method="post">{% csrf_token %}' +
-                    '<button class="badge badge-info" type="submit" name="station" value="' + feature.properties.dws_id + '">Details</button></form> <br>' +
+                    '<h6><button class="badge badge-secondary" type="submit" name="station" value="' +
+                    feature.properties.dws_id + '">DFE</button></h6></form>' +
+                    '<h6><button class="badge badge-secondary" onclick="window.location.href = ' +
+                    '\'https://www.dwa.gov.za/Hydrology/Verified/HyDataSets.aspx?Station=' +
+                    feature.properties.dws_id + '&SiteDesc=RIV\'">DWS Site</button></div></h6>' +
                     '<table class="table table-sm"><tr><td>Start Date:</td><td>' + feature.properties.obsStart +
                     '</td></tr><tr><td>End Date:</td><td>' + feature.properties.obsEnd +
                     '</td></tr><tr><td colspan="2"><a href="https://www.dwa.gov.za/Hydrology/Verified/CGI-BIN/HIS/Photos/' +
                     feature.properties.dws_id + '.JPG" target="_blank"><img src="https://www.dwa.gov.za/Hydrology/Verified/CGI-BIN/HIS/Photos/' +
                     feature.properties.dws_id + '.JPG" alt="Image loading or no image available" width="200"/></a></tr></table>');
                 layer.bindTooltip(feature.properties.dws_id);
+                layer.on('click', clickZoom)
             }
         });
         markers.addLayer(geoJsonLayer);
 
     });
 
-    map.addLayer(markers)
-    function invalidate_maps() {
-      for (var i=0; i<window.maps.length; i++) {
-        window.maps[i].invalidateSize();
-      }
+        map.addLayer(markers);
     }
-}
 
     var map = mapsPlaceholder.pop();
 
