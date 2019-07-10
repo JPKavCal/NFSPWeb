@@ -10,5 +10,10 @@ def index(request):
 def team(request):
     return render(request, 'NFSP_Website/team.html')
 
+
 def projects(request):
     return render(request, 'NFSP_Website/projects.html')
+
+
+def publications(request):
+    return render(request, 'NFSP_Website/publications.html')

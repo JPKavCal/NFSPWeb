@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+
+
+{% block body_block %}
+
+    <div id="main" class="d-flex flex-column">
+
+        <div class="jumbotron py-4 mb-0">
+          <h1 class="jumbotron-heading">Publications</h1>
+          <p class="lead text-muted">
+              Numerous studies have been undertaken that form the basis of hydrological modelling in South Africa, the most relevant of which have been collected here.
+          </p>
+        </div>
+
+      <div class="album py-3 bg-dark flex-fill">
+        <div id="project_album" class="container">
+
+          <div class="row my-2 justify-content-center">
+
+            <div id="wrc" class="col-12 py-2">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex">
+                        <h5>WRC Reports</h5>
+                    </div>
+                  <p class="card-text">A collection of the WRC reports relevant to the NFSP</p>
+                    <div class="collapse pb-2" id="collapseProj1" data-parent="#project_album">
+                      <div class="card card-body">
+                        <h5>Description</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Focus Area</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Progress</h5>
+                          <p>Rainfall and climate data for NFSP requested from SAWS.</p>
+                        <h5>More...</h5>
+                          <p>More information...</p>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex">
+                      <button id="wrc_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj1" aria-expanded="false" aria-controls="collapseProj1">
+                        Details
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="dws" class="col-12 py-2">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex">
+                        <h5>DWS Reports</h5>
+                    </div>
+                  <p class="card-text">A collection of the DWS reports relevant to the NFSP</p>
+                    <div class="collapse pb-2" id="collapseProj2" data-parent="#project_album">
+                      <div class="card card-body">
+                        <h5>Description</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Focus Area</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Progress</h5>
+                          <p>Rainfall and climate data for NFSP requested from SAWS.</p>
+                        <h5>More...</h5>
+                          <p>More information...</p>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex">
+                      <button id="dws_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj2" aria-expanded="false" aria-controls="collapseProj2">
+                        Details
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="lpu" class="col-12 py-2">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex">
+                        <h5>Local Publications</h5>
+                    </div>
+                  <p class="card-text">A collection of publications in local journals such as SAICE and Water Wheel</p>
+                    <div class="collapse pb-2" id="collapseProj3" data-parent="#project_album">
+                      <div class="card card-body">
+                        <h5>Description</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Focus Area</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Progress</h5>
+                          <p>Rainfall and climate data for NFSP requested from SAWS.</p>
+                        <h5>More...</h5>
+                          <p>More information...</p>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex">
+                      <button id="lpu_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj3" aria-expanded="false" aria-controls="collapseProj3">
+                        Details
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="ipu" class="col-12 py-2">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex">
+                        <h5>International Publications</h5>
+                    </div>
+                  <p class="card-text">A collection of publications in international journals</p>
+                    <div class="collapse pb-2" id="collapseProj4" data-parent="#project_album">
+                      <div class="card card-body">
+                        <h5>Description</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Focus Area</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Progress</h5>
+                          <p>Rainfall and climate data for NFSP requested from SAWS.</p>
+                        <h5>More...</h5>
+                          <p>More information...</p>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex">
+                      <button id="ipu_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj4" aria-expanded="false" aria-controls="collapseProj4">
+                        Details
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="con" class="col-12 py-2">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex">
+                        <h5>Conferences</h5>
+                    </div>
+                  <p class="card-text">A collection of posters or presentations from conferences</p>
+                    <div class="collapse pb-2" id="collapseProj5" data-parent="#project_album">
+                      <div class="card card-body">
+                        <h5>Description</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Focus Area</h5>
+                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
+                        <h5>Progress</h5>
+                          <p>Rainfall and climate data for NFSP requested from SAWS.</p>
+                        <h5>More...</h5>
+                          <p>More information...</p>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex">
+                      <button id="con_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj5" aria-expanded="false" aria-controls="collapseProj5">
+                        Details
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+{% block scriptblock %}
+    <script async src="{% static 'gebruikers/NFSP.js' %}"></script>
+{% endblock %}
+
+{% endblock %}

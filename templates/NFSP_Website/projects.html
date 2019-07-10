@@ -16,7 +16,7 @@
         <div id="project_album" class="container">
 
           <div class="row my-2 justify-content-center">
-            <div class="col-md-6 col-lg-4 py-2">
+            <div id="pr1" class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center">
@@ -37,7 +37,7 @@
                       </div>
                     </div>
                     <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj1" aria-expanded="false" aria-controls="collapseProj1">
+                      <button id="pr1_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj1" aria-expanded="false" aria-controls="collapseProj1">
                         Details
                       </button>
                     <small class="text-muted">Rainfall / Data</small>
@@ -45,7 +45,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 py-2">
+            <div id="pr2" class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center">
@@ -60,7 +60,7 @@
                       </div>
                     </div>
                   <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj2" aria-expanded="false" aria-controls="collapseProj2">
+                      <button id="pr2_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj2" aria-expanded="false" aria-controls="collapseProj2">
                         Details
                       </button>
                     <small class="text-muted">Rainfall</small>
@@ -68,7 +68,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 py-2">
+            <div id="pr3" class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center">
@@ -83,7 +83,7 @@
                       </div>
                     </div>
                   <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj3" aria-expanded="false" aria-controls="collapseProj3">
+                      <button id="pr3_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj3" aria-expanded="false" aria-controls="collapseProj3">
                         Details
                       </button>
                     <small class="text-muted">Rainfall</small>
@@ -91,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 py-2">
+            <div id="pr4" class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center">
@@ -106,7 +106,7 @@
                       </div>
                     </div>
                   <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj4" aria-expanded="false" aria-controls="collapseProj5">
+                      <button id="pr4_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj4" aria-expanded="false" aria-controls="collapseProj5">
                         Details
                       </button>
                     <small class="text-muted">Methods</small>
@@ -114,7 +114,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 py-2">
+            <div id="pr5" class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center">
@@ -129,7 +129,7 @@
                       </div>
                     </div>
                   <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj5" aria-expanded="false" aria-controls="collapseProj5">
+                      <button id="pr5_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj5" aria-expanded="false" aria-controls="collapseProj5">
                         Details
                       </button>
                     <small class="text-muted">Methods</small>
@@ -137,7 +137,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 py-2">
+            <div id="pr6" class="col-md-6 col-lg-4 py-2">
               <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center">
@@ -152,7 +152,7 @@
                       </div>
                     </div>
                   <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj6" aria-expanded="false" aria-controls="collapseProj6">
+                      <button id="pr6_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj6" aria-expanded="false" aria-controls="collapseProj6">
                         Details
                       </button>
                     <small class="text-muted">Products</small>
@@ -178,10 +178,8 @@
 
     </div>
 
-{#    <script>#}
-{#        $(document).on('shown.bs.collapse', function(event){#}
-{#            event.target.scrollIntoView();#}
-{#        });#}
-{#    </script>#}
+{% block scriptblock %}
+    <script src="{% static 'gebruikers/NFSP.js' %}"></script>
+{% endblock %}
 
 {% endblock %}

@@ -28,9 +28,9 @@
       mapsPlaceholder.push(this); // Use whatever global scope variable you like.
     });
 
-    function clickZoom(e) {
-        mapsPlaceholder[0].setView(e.target.getLatLng());
-    }
+    {#function clickZoom(e) {#}
+    {#    mapsPlaceholder[0].setView(e.target.getLatLng());#}
+    {# }#}
 
    function gauges_map_init_basic (map) {
 
@@ -63,7 +63,11 @@
                     feature.properties.dws_id + '.JPG" target="_blank"><img src="https://www.dwa.gov.za/Hydrology/Verified/CGI-BIN/HIS/Photos/' +
                     feature.properties.dws_id + '.JPG" alt="Image loading or no image available" width="200"/></a></tr></table>');
                 layer.bindTooltip(feature.properties.dws_id);
-                layer.on('click', clickZoom)
+                layer.on('popupopen', function(e) {
+                    var px = mapsPlaceholder[0].project(e.popup._latlng); // find the pixel location on the map where the popup anchor is
+                    px.y -= e.popup._container.clientHeight/2 + 80; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+                    mapsPlaceholder[0].panTo(mapsPlaceholder[0].unproject(px),{animate: true}); // pan to new center
+                });
             }
         });
         markers.addLayer(geoJsonLayer);

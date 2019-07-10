@@ -93,44 +93,6 @@ footer {
     background-color: #858585; !important;
     background-image: none;
 }
-.smloverlay {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/static/nailed_it.jpg");
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-  /*transition: 0.5s;*/
-}
-#overlay_text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: 'Amiri';
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-
-
-/*https://codepen.io/shamim539/pen/VvLLdV*/
-/*body {*/
-/*    font-family: 'Source Sans Pro', sans-serif;*/
-/*    line-height: 1.5;*/
-/*    color: #323232;*/
-/*    font-size: 15px;*/
-/*    font-weight: 400;*/
-/*    text-rendering: optimizeLegibility;*/
-/*    -webkit-font-smoothing: antialiased;*/
-/*    -moz-font-smoothing: antialiased;*/
-/*}*/
 .heading-title {
     margin-bottom: 10px;
 }
@@ -155,10 +117,6 @@ footer {
 .text-uppercase {
     text-transform: uppercase;
 }
-
-/*.team-member, .team-member .team-img {*/
-/*    position: absolute;*/
-/*}*/
 .team-member {
     overflow: hidden;
 }
@@ -166,7 +124,6 @@ footer {
     position: relative;
     background-attachment: scroll;
 }
-
 .team-hover {
     position: absolute;
     top: 0;
