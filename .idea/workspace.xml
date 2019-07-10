@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFSP_Website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NFSP_Website/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFSP_Website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NFSP_Website/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nailed_it.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFSPWebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NFSPWebsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/csrf.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/csrf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/gaugedata/dfe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/dfe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/gaugedata/gauges.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/gauges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/gebruikers/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gebruikers/registration.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,31 +29,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gaugedata/urls.py">
+        <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="31" column="60" lean-forward="true" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
+        <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="177" column="8" lean-forward="true" selection-start-line="177" selection-start-column="8" selection-end-line="278" selection-end-column="12" />
+            <state relative-caret-position="2700">
+              <caret line="180" column="2" selection-start-line="180" selection-end-line="182" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="168" selection-start-line="168" selection-end-line="168" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="156" column="10" selection-start-line="156" selection-start-column="10" selection-end-line="156" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauges.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="67" column="65" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -61,17 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/publications.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="168" column="18" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-971">
-              <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+            <state relative-caret-position="2310">
+              <caret line="154" selection-start-line="154" selection-end-line="154" />
             </state>
           </provider>
         </entry>
@@ -79,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NFSPWebsite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="175" column="37" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+            <state relative-caret-position="194">
+              <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
               <folding>
                 <element signature="e#312#321#0" expanded="true" />
               </folding>
@@ -88,20 +94,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="75" />
+            <state relative-caret-position="120">
+              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/csrf.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="117" column="39" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+            <state relative-caret-position="-1875">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -126,6 +137,7 @@
       <find>showcase</find>
       <find>Spinner</find>
       <find>getStationData</find>
+      <find>favicon.ico</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,10 +158,7 @@
         <option value="$PROJECT_DIR$/.secret_key2" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/static/landing-page.min.css" />
-        <option value="$PROJECT_DIR$/templates/gebruikers/registration.html" />
         <option value="$PROJECT_DIR$/templates/gebruikers/login.html" />
-        <option value="$PROJECT_DIR$/static/csrf.js" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/index.html" />
         <option value="$PROJECT_DIR$/gaugedata/admin.py" />
         <option value="$PROJECT_DIR$/populate_Shp.py" />
         <option value="$PROJECT_DIR$/gaugedata/models.py" />
@@ -159,23 +168,27 @@
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/static/manifest.json" />
-        <option value="$PROJECT_DIR$/NFSPWebsite/settings.py" />
         <option value="$PROJECT_DIR$/gaugedata/views.py" />
         <option value="$PROJECT_DIR$/NFSP_Website/views.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/NFSP_Website/urls.py" />
         <option value="$PROJECT_DIR$/templates/NFSP_Website/projects.html" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/publications.html" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/dfe.html" />
-        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.js" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/team.html" />
         <option value="$PROJECT_DIR$/static/gebruikers/NFSP.css" />
+        <option value="$PROJECT_DIR$/templates/gaugedata/dfe.html" />
+        <option value="$PROJECT_DIR$/templates/NFSP_Website/team.html" />
+        <option value="$PROJECT_DIR$/templates/NFSP_Website/publications.html" />
         <option value="$PROJECT_DIR$/templates/gaugedata/gauges.html" />
+        <option value="$PROJECT_DIR$/templates/gebruikers/registration.html" />
+        <option value="$PROJECT_DIR$/templates/NFSP_Website/index.html" />
+        <option value="$PROJECT_DIR$/NFSPWebsite/settings.py" />
+        <option value="$PROJECT_DIR$/static/csrf.js" />
+        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2167" />
+    <option name="x" value="240" />
+    <option name="y" value="158" />
     <option name="width" value="1440" />
     <option name="height" value="791" />
   </component>
@@ -185,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,6 +219,23 @@
             <path>
               <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="gebruikers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="nfsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,11 +244,22 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="gaugedata" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gebruikers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="NFSP_Website" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,7 +359,8 @@
       <workItem from="1562670777846" duration="3975000" />
       <workItem from="1562698230087" duration="5521000" />
       <workItem from="1562750104079" duration="4318000" />
-      <workItem from="1562758491153" duration="6427000" />
+      <workItem from="1562758491153" duration="7365000" />
+      <workItem from="1562778764599" duration="4761000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -351,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166501000" />
+    <option name="totallyTimeSpent" value="172200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,10 +406,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.13713981" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.13874066" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
       <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,7 +423,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010941" side_tool="true" weight="0.33045357" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.28016788" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.27969763" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32843652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -525,34 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/csrf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gebruikers/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gebruikers/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="118" column="72" selection-start-line="118" selection-start-column="72" selection-end-line="118" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/rest_framework/js/csrf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -640,29 +655,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauge_dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gaugedata/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -681,34 +679,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="180" column="2" selection-start-line="180" selection-end-line="182" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="177" column="8" lean-forward="true" selection-start-line="177" selection-start-column="8" selection-end-line="278" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/publications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="168" column="18" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -736,41 +706,110 @@
     <entry file="file://$PROJECT_DIR$/static/gis/img/draw_line_off.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/NFSPWebsite/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauge_dropdown.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="175" column="37" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gebruikers/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gebruikers/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gaugedata/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
-            <element signature="e#312#321#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="39" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+        <state relative-caret-position="-1875">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/static/csrf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NFSPWebsite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="75" />
+        <state relative-caret-position="194">
+          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+          <folding>
+            <element signature="e#312#321#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
+    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/publications.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-971">
-          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+        <state relative-caret-position="2310">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauges.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="67" column="65" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="156" column="10" selection-start-line="156" selection-start-column="10" selection-end-line="156" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="180" column="2" selection-start-line="180" selection-end-line="182" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="60" lean-forward="true" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
         </state>
       </provider>
     </entry>

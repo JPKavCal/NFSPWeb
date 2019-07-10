@@ -173,7 +173,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LEAFLET_CONFIG = {
     # 'SPATIAL_EXTENT': (10.00, -35.00, 40.00, -20.00),
-    'DEFAULT_CENTER': (-29.9, 31.00),
+    'DEFAULT_CENTER': (-28.77, 25.),
     'DEFAULT_ZOOM': 6,
     'MIN_ZOOM': 3,
     'MAX_ZOOM': 20,

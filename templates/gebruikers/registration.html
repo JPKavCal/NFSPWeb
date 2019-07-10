@@ -13,18 +13,12 @@
         <h2>Thank you for registering!</h2>
       {% else %}
         <h3>Register Here</h3>
-        <h4>Just fill out the form dummy ...</h4>
-
         <form enctype="multipart/form-data" method="POST">
           {% csrf_token %}
           {{ user_form|crispy }}
           <input type="submit" name="" value="Register">
         </form>
-
       {% endif %}
-
     </div>
-
   </div>
-
 {% endblock %}

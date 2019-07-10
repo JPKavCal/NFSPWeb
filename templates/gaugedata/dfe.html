@@ -25,148 +25,134 @@
             <h3 class="jumbotron-heading">Design Flood Estimation</h3>
 
             <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Select Method</span>
-              </div>
-              <select class="custom-select" id="dfe_method">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Select Method</span>
+                </div>
+                <select class="custom-select" id="dfe_method">
                     <option value="dws">DWS Station</option>
                     <option value="latlon">Coordinate - click on map</option>
                     <option value="manual">Manual - inactive</option>
-              </select>
-            </div>
-
-            <form method="POST">
-            {% csrf_token %}
-
-            <div class="input-group mb-3 dws">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Select Region</span>
-              </div>
-              <select class="custom-select" id="region">
-                    <option value=""></option>
-                {% for region in regions %}
-                    <option value="{{ region }}">{{ region }}</option>
-                {% endfor %}
-              </select>
-            </div>
-
-            <div class="input-group mb-3 dws">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Select Station</span>
-              </div>
-              <select class="custom-select" id="station_dd">
-                    <option value=""></option>
                 </select>
             </div>
 
-            <div class="input-group mb-3 dws latlon">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Lat</span>
-              </div>
-              <input type="text" class="form-control" id="Lat" readonly>
-              <div class="input-group-append">
-                <span class="input-group-text">Lon</span>
-              </div>
-              <input type="text" class="form-control" id="Lon" readonly>
-            </div>
+            <form method="POST">
+                {% csrf_token %}
 
+                <div class="input-group mb-3 dws">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Select Region</span>
+                    </div>
+                    <select class="custom-select" id="region">
+                        <option value=""></option>
+                        {% for region in regions %}
+                        <option value="{{ region }}">{{ region }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
 
+                <div class="input-group mb-3 dws">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Select Station</span>
+                    </div>
+                    <select class="custom-select" id="station_dd">
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3 dws latlon">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Lat</span>
+                    </div>
+                    <input type="text" class="form-control" id="Lat" readonly>
+                    <div class="input-group-append">
+                        <span class="input-group-text">Lon</span>
+                    </div>
+                    <input type="text" class="form-control" id="Lon" readonly>
+                </div>
             </form>
         </div>
         <div class="col-md-6 p-0">
             {% leaflet_map "dfe_map" callback="dfe_map_init_basic" %}
         </div>
     </div>
-
 <div>
 
-  <ul class="nav nav-pills nav-justified">
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0 active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#RM" aria-controls="RM" role="tab" data-toggle="tab">RM</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#ARM" aria-controls="ARM" role="tab" data-toggle="tab">ARM</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SDF" aria-controls="SDF" role="tab" data-toggle="tab">SDF</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SCS" aria-controls="SCS" role="tab" data-toggle="tab">SCS</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#EMP" aria-controls="EMP" role="tab" data-toggle="tab">EMP</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#UH" aria-controls="UH" role="tab" data-toggle="tab">UH</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Stats</a></li>
-    <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Results" aria-controls="Results" role="tab" data-toggle="tab">Results</a></li>
-  </ul>
+    <ul class="nav nav-pills nav-justified">
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0 active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#RM" aria-controls="RM" role="tab" data-toggle="tab">RM</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#ARM" aria-controls="ARM" role="tab" data-toggle="tab">ARM</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SDF" aria-controls="SDF" role="tab" data-toggle="tab">SDF</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SCS" aria-controls="SCS" role="tab" data-toggle="tab">SCS</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#EMP" aria-controls="EMP" role="tab" data-toggle="tab">EMP</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#UH" aria-controls="UH" role="tab" data-toggle="tab">UH</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Stats</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Results" aria-controls="Results" role="tab" data-toggle="tab">Results</a></li>
+    </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="catch_param">
-      Info Here
-      <p>Insert option for automatic calculation...</p>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="catch_param">
+            Info Here
+            <p>Insert option for automatic calculation...</p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="RM">
+            Rational Method
+        </div>
+        <div role="tabpanel" class="tab-pane" id="ARM">Alternative RM</div>
+        <div role="tabpanel" class="tab-pane" id="SDF">SDF method</div>
+        <div role="tabpanel" class="tab-pane" id="SCS">SCS method</div>
+        <div role="tabpanel" class="tab-pane" id="EMP">Empirical methods</div>
+        <div role="tabpanel" class="tab-pane" id="UH">Unit Hydrograph</div>
+        <div role="tabpanel" class="tab-pane" id="Stats">
+            <div class="row mx-0">
+                <div class="col-md-6 p-1 my-auto">
+                    {{ bokeh_div|safe }}
 
-      <table>
-{#        {{catchment_data_form.as_table}}#}
-      </table>
-
-
-    </div>
-    <div role="tabpanel" class="tab-pane" id="RM">
-      Rational Method
-
-      <table>
-{#        {{rm_form}}#}
-      </table>
-
-    </div>
-    <div role="tabpanel" class="tab-pane" id="ARM">Alternative RM</div>
-    <div role="tabpanel" class="tab-pane" id="SDF">SDF method</div>
-    <div role="tabpanel" class="tab-pane" id="SCS">SCS method</div>
-    <div role="tabpanel" class="tab-pane" id="EMP">Empirical methods</div>
-    <div role="tabpanel" class="tab-pane" id="UH">Unit Hydrograph</div>
-    <div role="tabpanel" class="tab-pane" id="Stats">
-        <div class="row mx-0">
-            <div class="col-md-6 p-1 my-auto">
-                {{ bokeh_div|safe }}
-
-                {{ bokeh_script|safe }}
-            </div>
-            <div class="col-md-6 p-0">
-                <table class="table table-dark m-0">
-                    <tr>
-                        <th>Frequency analysis results</th>
-                    </tr>
-                    <tr>
-                        <th>RP</th>
-                        <th>Flow (m<sup>3</sup>.s<sup>-1</sup>)</th>
-                    </tr>
-                    <tr>
-                        <th>2yr</th>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th>5yr</th>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th>10yr</th>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th>20yr</th>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th>50yr</th>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th>100yr</th>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th>200yr</th>
-                        <td>50</td>
-                    </tr>
-                </table>
+                    {{ bokeh_script|safe }}
+                </div>
+                <div class="col-md-6 p-0">
+                    <table class="table table-dark m-0">
+                        <tr>
+                            <th>Frequency analysis results</th>
+                        </tr>
+                        <tr>
+                            <th>RP</th>
+                            <th>Flow (m<sup>3</sup>.s<sup>-1</sup>)</th>
+                        </tr>
+                        <tr>
+                            <th>2yr</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th>5yr</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th>10yr</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th>20yr</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th>50yr</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th>100yr</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th>200yr</th>
+                            <td>50</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
+        <div role="tabpanel" class="tab-pane" id="Results">Output results here</div>
     </div>
-    <div role="tabpanel" class="tab-pane" id="Results">Output results here</div>
-  </div>
 
 </div>
 
@@ -174,109 +160,12 @@
 
 {% block scriptblock %}
     <script>
-
         var mapsPlaceholder = [];
         var markersHolder = [];
         var polyHolder = [];
-
-        function clear_map () {
-            if (markersHolder.length == 1) {
-                var m = markersHolder.pop();
-                m.remove();
-            }
-            if (polyHolder.length == 1) {
-                var p = polyHolder.pop();
-                p.remove();
-            }
-        }
-
-        function dfe_map_init_basic (map, options) {
-            map.resetviewControl.remove();
-            map.setMinZoom(5)
-            mapsPlaceholder.push(map);
-            if ("{{ name }}".length == 6) {
-                $("#region").val("{{ name }}"[0]);
-            }
-            getRegionData();
-            if (document.getElementById('station_dd').length > 1) {
-                document.getElementById('station_dd').value = "{{ name }}";
-            }
-            map.on('click', function(e){
-                if ($("#dfe_method").val() == "latlon") {
-                    clear_map();
-                    var marker = L.marker(e.latlng).addTo(map);
-                    markersHolder.push(marker);
-                    $("#Lat").val(Math.round((e.latlng['lat'] + 0.000001) * 10000) / 10000);
-                    $("#Lon").val(Math.round((e.latlng['lng'] + 0.000001) * 10000) / 10000);
-                    map.setView(e.latlng);
-                }
-
-            });
-
-        }
-
-        function getStationData() {
-            mapsPlaceholder[0].spin(true);
-            $.ajax({
-               headers: {"X-CSRFToken": getCookie('csrftoken')},
-               method: "POST",
-               url:'{% url "gaugedata:gauged" %}',
-               data: { 'station': $("#station_dd").val()},
-               success: function(data) {
-                    $("#Lat").val(data.lat);
-                    $("#Lon").val(data.lon);
-                    clear_map();
-                    if (data.lat != 0) {
-                        var marker = L.marker([data.lat, data.lon]).addTo(mapsPlaceholder[0]);
-                        markersHolder.push(marker);
-                        mapsPlaceholder[0].setView([data.lat, data.lon], 8);
-                    }
-                    if (data.poly[0][0] != 0) {
-                        var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
-                        polyHolder.push(poly);
-                        mapsPlaceholder[0].fitBounds(poly.getBounds());
-                    }
-            }
-            }).done(function() {
-              mapsPlaceholder[0].spin(false);
-            });
-        }
-
-        function getRegionData() {
-            $.ajax({
-                headers: {"X-CSRFToken": getCookie('csrftoken')},
-                method: "POST",
-                url:'{% url "gaugedata:regions" %}',
-                data: { 'region': $("#region").val()},
-                success: function(data) {
-                    $("#station_dd").html(data);
-                    clear_map();
-                }
-            }).done(function() {
-                if ("{{ name }}".length == 6) {
-                    $("#station_dd").val("{{ name }}");
-                    getStationData();
-                }
-            });
-        }
-
-        $("#region").change(function() {
-            $("#Lat").val('');
-            $("#Lon").val('');
-            getRegionData();
-        });
-
-        $("#station_dd").change(function() {
-            getStationData();
-        });
-
-        $("#dfe_method").change(function() {
-            clear_map();
-            $("#Lat").val('');
-            $("#Lon").val('');
-            $('.dws').hide();
-            $('.' + $(this).val()).show();
-         });
-
+        var sname = "{{ name }}";
+        var gdataurl = '{% url "gaugedata:gauged" %}';
+        var rdataurl = '{% url "gaugedata:regions" %}';
     </script>
+    <script src="{% static 'gebruikers/NFSP.js' %}"></script>
 {% endblock %}

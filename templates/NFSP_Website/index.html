@@ -5,15 +5,10 @@
 {% block header %}
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
   <link href="{% static 'landing-page.min.css' %}" rel="stylesheet">
-
 {% endblock %}
 
 {% block body_block %}
-
-  <!-- Masthead -->
   <header class="masthead text-white text-center" style="background-image: url({% static 'nfsp/img/bg-masthead.jpg' %})">
     <div class="overlay"></div>
     <div class="container">
@@ -45,8 +40,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Icons Grid -->
   <section class="features-icons bg-light text-center">
     <div class="container">
       <div class="row">
@@ -80,8 +73,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Image Showcases -->
   <section class="showcase">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
@@ -108,8 +99,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Testimonials -->
   <section class="testimonials text-center bg-light">
     <div class="container">
       <h2 class="mb-5">Collaborators</h2>
@@ -155,29 +144,26 @@
       </div>
     </div>
   </section>
+    <section class="call-to-action text-white text-center" style="background-image: url({% static 'nfsp/img/bg-masthead.jpg' %})">
+        <div class="overlay"></div>
+    </section>
 
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center" style="background-image: url({% static 'nfsp/img/bg-masthead.jpg' %})">
-    <div class="overlay"></div>
-  </section>
-
-  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Not implemented yet...</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Thanks for the interest... We have however not implemented our e-mail sign up as yet. Please check back again at a later stage.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Not implemented yet...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thanks for the interest... We have however not implemented our e-mail sign up as yet. Please check back again at a later stage.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
 {% endblock %}
