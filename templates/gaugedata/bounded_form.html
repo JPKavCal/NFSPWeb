@@ -50,6 +50,28 @@
 
         {#  <button type="submit" class="btn btn-primary">Submit</button>#}
         </form>
+        <table class="table table-dark m-0">
+            <tr>
+                <th>Design Rainfall Depths</th>
+            </tr>
+            <tr>
+                <th>RP</th>
+                <th>2yr</th>
+                <th>5yr</th>
+                <th>10yr</th>
+                <th>20yr</th>
+                <th>50yr</th>
+                <th>100yr</th>
+                <th>200yr</th>
+            </tr>
+            <tr>
+                <th>Depth (mm)</th>
+                {% for x in x_list %}
+                    <td>{{ x }}</td>
+                {% endfor %}
+            </tr>
+
+        </table>
 
     </div>
 

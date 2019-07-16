@@ -40,19 +40,19 @@ class Catchment(models.Model):
 class CatchForm(ModelForm):
     class Meta:
         model = Catchment
-        exclude = ['dws_id', 'geom']
+        exclude = ['dws_id', 'geom', 'dr2', 'dr5', 'dr10', 'dr20', 'dr50', 'dr100', 'dr200']
         labels = {
             "area": "Catchment Area (km\xB2)",
             "arf": "Aerial Reduction Factor (%)",
             "lc": "Length to Centroid (m)",
             "s1085": "Catchment Slope (m/m - 10-85)",
             "tc": "Time of Concentration (hours)",
-            "dr2": "Design Rainfall Depth (mm - 2yr)",
-            "dr5": "Design Rainfall Depth (mm - 5yr)",
-            "dr10": "Design Rainfall Depth (mm - 10yr)",
-            "dr20": "Design Rainfall Depth (mm - 20yr)",
-            "dr50": "Design Rainfall Depth (mm - 50yr)",
-            "dr100": "Design Rainfall Depth (mm - 100yr)",
-            "dr200": "Design Rainfall Depth (mm - 200yr)",
+            # "dr2": "Design Rainfall Depth (mm - 2yr)",
+            # "dr5": "Design Rainfall Depth (mm - 5yr)",
+            # "dr10": "Design Rainfall Depth (mm - 10yr)",
+            # "dr20": "Design Rainfall Depth (mm - 20yr)",
+            # "dr50": "Design Rainfall Depth (mm - 50yr)",
+            # "dr100": "Design Rainfall Depth (mm - 100yr)",
+            # "dr200": "Design Rainfall Depth (mm - 200yr)",
 
         }

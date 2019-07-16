@@ -170,8 +170,10 @@ def catchform(request):
             form = CatchForm()
             script = "<h4>No Graph to display</h4>"
             div = ""
+            y = []
 
         return render(request, 'gaugedata/bounded_form.html', {'form': form,
+                                                               'x_list': y,
                                                                "bokeh_script": script,
                                                                "bokeh_div": div
                                                                })
