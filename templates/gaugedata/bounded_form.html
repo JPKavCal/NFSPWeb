@@ -1,7 +1,7 @@
 {% load widget_tweaks %}
 
 <div class="row mx-0">
-    <div class="col-md-6 p-1 my-auto" id="catch_param_form">
+    <div class="col-md-6 p-1" id="catch_param_form">
 
         <form method="post" novalidate>
           {% csrf_token %}
@@ -50,10 +50,14 @@
 
         {#  <button type="submit" class="btn btn-primary">Submit</button>#}
         </form>
-        <table class="table table-dark m-0">
-            <tr>
-                <th>Design Rainfall Depths</th>
-            </tr>
+
+
+    </div>
+
+    <div class="col-md-6 p-1">
+        {{ bokeh_div|safe }}
+
+        <table class="table table-sm m-0">
             <tr>
                 <th>RP</th>
                 <th>2yr</th>
@@ -72,11 +76,6 @@
             </tr>
 
         </table>
-
-    </div>
-
-    <div class="col-md-6 p-1">
-        {{ bokeh_div|safe }}
 
         {{ bokeh_script|safe }}
     </div>

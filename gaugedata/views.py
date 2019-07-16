@@ -138,6 +138,7 @@ def catchform(request):
             source = ColumnDataSource(data=dict(x=x, y=y))
 
             plot = figure(
+                title='Design Rainfall Depths',
                 sizing_mode='stretch_width',
                 tools=['pan', 'box_zoom', 'save',
                        'reset', 'wheel_zoom'],
