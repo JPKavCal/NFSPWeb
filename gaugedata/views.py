@@ -135,11 +135,6 @@ def catchform(request):
                 ("Rainfall Depth (mm)", "@y")
             ]
 
-            if request.method == 'POST':
-                name = request.POST['station']
-            else:
-                name = None
-
             source = ColumnDataSource(data=dict(x=x, y=y))
 
             plot = figure(
