@@ -70,6 +70,7 @@
                     <input type="text" class="form-control" id="Lon" readonly>
                 </div>
             </form>
+            <h4 class="jumbotron-heading">Only catchments for Region A have been uploaded</h4>
         </div>
         <div class="col-md-6 p-0">
             {% leaflet_map "dfe_map" callback="dfe_map_init_basic" %}
@@ -92,8 +93,7 @@
     <!-- Tab panes -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="catch_param">
-            Info Here
-            <p>Insert option for automatic calculation...</p>
+            <h5>Please select a catchment to populate</h5>
         </div>
         <div role="tabpanel" class="tab-pane" id="RM">
             Rational Method
@@ -165,6 +165,7 @@
         var polyHolder = [];
         var sname = "{{ name }}";
         var gdataurl = '{% url "gaugedata:gauged" %}';
+        var cdataurl = '{% url "gaugedata:catchform" %}';
         var rdataurl = '{% url "gaugedata:regions" %}';
     </script>
     <script src="{% static 'gebruikers/NFSP.js' %}"></script>

@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'rest_framework_gis',
     'crispy_forms',
     'fullurl',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

@@ -16,14 +16,17 @@ $("#region").change(function() {
 
 $("#station_dd").change(function() {
     getStationData();
+    getCatchData();
 });
 
 $("#dfe_method").change(function() {
     clear_map();
     $("#Lat").val('');
     $("#Lon").val('');
+    $("#station_dd").val('');
     $('.dws').hide();
     $('.' + $(this).val()).show();
+    getCatchData();
  });
 
 function clear_map () {
@@ -86,7 +89,22 @@ function getStationData() {
             }
     }
     }).done(function() {
-      mapsPlaceholder[0].spin(false);
+        mapsPlaceholder[0].spin(false);
+    });
+}
+
+function getCatchData() {
+    mapsPlaceholder[0].spin(true);
+    $.ajax({
+       headers: {"X-CSRFToken": getCookie('csrftoken')},
+       method: "POST",
+       url: cdataurl,
+       data: { 'station': $("#station_dd").val()},
+       success: function(data) {
+            $("#catch_param").html(data);
+        }
+    }).done(function() {
+        mapsPlaceholder[0].spin(false);
     });
 }
 
@@ -104,6 +122,7 @@ function getRegionData() {
         if (sname.length == 6) {
             $("#station_dd").val(sname);
             getStationData();
+            getCatchData();
         }
     });
 }
@@ -152,6 +171,7 @@ function gauges_map_init_basic (map, options) {
     });
 
     map.addLayer(markers);
+    // mapsPlaceholder[0].getContainer().className += ' sidebar-map'
 }
 
 // General

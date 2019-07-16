@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
-from .models import RiverGauge, Catchment
+from .models import RiverGauge, Catchment, CatchForm
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.db.models.functions import Substr
@@ -63,7 +63,9 @@ def dfe(request):
         # plot_width=450,
         plot_height=400,
         id='stat_fig',
-        tooltips=TOOLTIPS
+        tooltips=TOOLTIPS,
+        active_drag=None,
+        active_scroll=None
     )
     plot.line('x', 'y', source=source)
     plot.toolbar.logo = None
@@ -108,3 +110,68 @@ def region_data(request):
             qs = []
 
         return render(request, 'gaugedata/gauge_dropdown.html', {'gauges': qs})
+
+
+@login_required
+def catchform(request):
+    if request.method == 'POST':
+        try:
+            catchment = Catchment.objects.get(pk=request.POST['station'])
+            form = CatchForm(instance=catchment)
+
+            x = [2, 5, 10, 20, 50, 100, 200]
+            y = [
+                catchment.dr2,
+                catchment.dr5,
+                catchment.dr10,
+                catchment.dr20,
+                catchment.dr50,
+                catchment.dr100,
+                catchment.dr200,
+            ]
+
+            TOOLTIPS = [
+                ("Year", "@x"),
+                ("Rainfall Depth (mm)", "@y")
+            ]
+
+            if request.method == 'POST':
+                name = request.POST['station']
+            else:
+                name = None
+
+            source = ColumnDataSource(data=dict(x=x, y=y))
+
+            plot = figure(
+                sizing_mode='stretch_width',
+                tools=['pan', 'box_zoom', 'save',
+                       'reset', 'wheel_zoom'],
+                y_range=Range1d(min(y) * 0.8, max(y) * 1.1, bounds=(min(y) * 0.5, max(y) * 1.15)),
+                x_range=Range1d(min(x) - 1, max(x) + 50, bounds=(min(x) - 1, max(x) + 50)),
+                x_axis_type="log",
+                x_axis_label="Return Period (1:x year)",
+                y_axis_label="Rainfall Depth (mm)",
+                # plot_width=450,
+                plot_height=400,
+                id='rain_fig',
+                tooltips=TOOLTIPS,
+                active_drag=None,
+                active_scroll=None
+            )
+            plot.line('x', 'y', source=source)
+            plot.circle(x, y, fill_color="white", size=8)
+            plot.toolbar.logo = None
+            t = Spacer()
+            layout = row(t, plot)  # , slider
+
+            script, div = components(layout, CDN)
+
+        except ObjectDoesNotExist:
+            form = CatchForm()
+            script = "<h4>No Graph to display</h4>"
+            div = ""
+
+        return render(request, 'gaugedata/bounded_form.html', {'form': form,
+                                                               "bokeh_script": script,
+                                                               "bokeh_div": div
+                                                               })

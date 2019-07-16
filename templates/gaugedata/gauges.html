@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.css' %}" />
     <link rel="stylesheet" href="{% static 'gaugedata/MarkerCluster.Default.css' %}" />
     <script src="{% static 'gaugedata/leaflet.markercluster-src.js' %}"></script>
+
 {% endblock %}
 
 {% block body_block %}
@@ -21,6 +22,9 @@
 {% block scriptblock %}
     <script>
         var mapsPlaceholder = [];
+        {#$(document).ready(function (){#}
+        {#    mapsPlaceholder[0].getContainer().className += ' sidebar-map'#}
+        {# });#}
     </script>
     <script src="{% static 'gebruikers/NFSP.js' %}"></script>
 {% endblock %}
