@@ -30,7 +30,7 @@ $("#dfe_method").change(function() {
     getCatchData();
 });
 
-$("#dfe_get_loc").click(function (){
+$("#dfe_get_loc").on("click touchstart tap", function (){
     clear_map();
     navigator.geolocation.getCurrentPosition(function(location) {
         var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);

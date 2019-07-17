@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,16 +45,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+            <state relative-caret-position="540">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -162,8 +161,8 @@
         <option value="$PROJECT_DIR$/gaugedata/views.py" />
         <option value="$PROJECT_DIR$/templates/gaugedata/bounded_form.html" />
         <option value="$PROJECT_DIR$/templates/gaugedata/dfe.html" />
-        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.js" />
         <option value="$PROJECT_DIR$/static/gebruikers/NFSP.css" />
+        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.js" />
       </list>
     </option>
   </component>
@@ -318,7 +317,7 @@
       <workItem from="1563273145162" duration="6943000" />
       <workItem from="1563296954770" duration="10462000" />
       <workItem from="1563363919800" duration="2921000" />
-      <workItem from="1563384650681" duration="220000" />
+      <workItem from="1563384650681" duration="574000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -352,7 +351,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201148000" />
+    <option name="totallyTimeSpent" value="201502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,20 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="79" column="106" selection-start-line="79" selection-start-column="89" selection-end-line="79" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -758,6 +743,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="79" column="106" selection-start-line="79" selection-start-column="89" selection-end-line="79" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
