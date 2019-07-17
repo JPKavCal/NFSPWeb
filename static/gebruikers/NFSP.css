@@ -26,7 +26,9 @@ footer {
 #team_bg {
     /*background-color: #858585;*/
 }
-
+.btn {
+    cursor: pointer;
+}
 .btn-xs {
   padding: .25rem .4rem;
   font-size: .875rem;
