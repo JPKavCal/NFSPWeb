@@ -32,8 +32,9 @@ $("#dfe_method").change(function() {
 
 $("#dfe_get_loc").on("click touchstart tap", function (){
     clear_map();
+    alert('step 1');
     navigator.geolocation.getCurrentPosition(function(location) {
-        alert('here')
+        alert('step 2');
         var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
         var marker = L.marker(latlng).addTo(mapsPlaceholder[0]);
             markersHolder.push(marker);
