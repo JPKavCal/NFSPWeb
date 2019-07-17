@@ -25,9 +25,22 @@ $("#dfe_method").change(function() {
     $("#Lon").val('');
     $("#station_dd").val('');
     $('.dws').hide();
+    $('.latlon').hide();
     $('.' + $(this).val()).show();
     getCatchData();
- });
+});
+
+$("#dfe_get_loc").click(function (){
+    clear_map();
+    navigator.geolocation.getCurrentPosition(function(location) {
+        var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+        var marker = L.marker(latlng).addTo(mapsPlaceholder[0]);
+            markersHolder.push(marker);
+            $("#Lat").val(Math.round((latlng['lat'] + 0.000001) * 10000) / 10000);
+            $("#Lon").val(Math.round((latlng['lng'] + 0.000001) * 10000) / 10000);
+        mapsPlaceholder[0].setView(latlng, 12);
+    });
+});
 
 function clear_map () {
     if (markersHolder.length == 1) {
@@ -45,6 +58,7 @@ function dfe_map_init_basic (map, options) {
     map.setMinZoom(5);
     map.setZoom(5);
     mapsPlaceholder.push(map);
+    $("#dfe_latlon_but").hide()
     if (sname.length == 6) {
         $("#region").val(sname[0]);
     }
