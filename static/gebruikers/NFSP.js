@@ -42,6 +42,10 @@ $("#dfe_get_loc").on("click touchstart tap", function (){
     });
 });
 
+$("#dfe_latlon_submit").on("click touchstart tap", function (){
+    alert("Sorry...\nNot implemented as yet");
+});
+
 function clear_map () {
     if (markersHolder.length == 1) {
         var m = markersHolder.pop();
