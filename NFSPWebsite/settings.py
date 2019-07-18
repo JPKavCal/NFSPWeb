@@ -28,8 +28,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-SECURE_SSL_REDIRECT = True
-
 dotenv_file = os.path.join(BASE_DIR, ".env")
 if os.path.isfile(dotenv_file):
     dotenv.load_dotenv(dotenv_file)
@@ -40,14 +38,16 @@ if os.path.isfile(dotenv_file):
 # SECURITY WARNING: keep the secret key used in production secret!
 try:
     SECRET_KEY = os.environ['SECRET_KEY']
+    SECURE_SSL_REDIRECT = True
 except KeyError:
+    SECURE_SSL_REDIRECT = False
     with open('./.secret_key2') as f:
         SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'nfsp.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'https://nfsp.herokuapp.com']
 
 
 # Application definition

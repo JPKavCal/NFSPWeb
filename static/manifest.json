@@ -5,8 +5,8 @@
   "background_color": "#353a40",
   "display": "fullscreen",
   "orientation": "any",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "https://nfsp.herokuapp.com/",
+  "start_url": "https://nfsp.herokuapp.com/",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
