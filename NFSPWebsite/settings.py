@@ -47,7 +47,7 @@ except KeyError:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://nfsp.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'nfsp.herokuapp.com']
 
 
 # Application definition
