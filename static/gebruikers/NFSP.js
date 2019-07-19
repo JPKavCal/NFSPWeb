@@ -98,7 +98,7 @@ function getStationData() {
             if (data.lat != 0) {
                 var marker = L.marker([data.lat, data.lon]).addTo(mapsPlaceholder[0]);
                 markersHolder.push(marker);
-                mapsPlaceholder[0].setView([data.lat, data.lon], 8);
+                mapsPlaceholder[0].setView([data.lat, data.lon], 12);
             }
             if (data.poly[0][0] != 0) {
                 var poly = L.polygon(data.poly, {color: 'green'}).addTo(mapsPlaceholder[0]);
