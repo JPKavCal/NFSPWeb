@@ -11,17 +11,6 @@
         <link rel="manifest" href="{% static 'manifest.json' %}">
         <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js" integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc" crossorigin="anonymous"></script>
 
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-Title" content="NFSP">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-72x72.png' %}" sizes="72x72">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-96x96.png' %}" sizes="96x96">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-128x128.png' %}" sizes="128x128">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-144x144.png' %}" sizes="144x144">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-152x152.png' %}" sizes="152x152">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-384x384.png' %}" sizes="384x384">
-        <link rel="apple-touch-icon" href="{% static 'icons/icon-512x512.png' %}" sizes="512x512">
-
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -109,15 +98,5 @@
 
 {% block scriptblock %}
 {% endblock %}
-
-<script>
-    var iOS = !!navigator.platform && /iPhone/.test(navigator.platform);
-    if (iOS) {
-        document.querySelector('link[rel="manifest"]').setAttribute("rel", "no-on-ios");
-        console.log("ios detected")}
-    else {
-        console.log("not an ios device")
-    }
-</script>
 
 </html>
