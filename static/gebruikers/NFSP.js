@@ -14,9 +14,12 @@ $("#region").change(function() {
     getRegionData();
 });
 
+
+
 $("#station_dd").change(function() {
     getStationData();
     getCatchData();
+    getStatsData();
 });
 
 $("#dfe_method").change(function() {
@@ -81,7 +84,6 @@ function dfe_map_init_basic (map, options) {
         }
 
     });
-
 }
 
 function getStationData() {
@@ -123,6 +125,26 @@ function getCatchData() {
         }
     }).done(function() {
         mapsPlaceholder[0].spin(false);
+        console.log("catch pre");
+        if (sname.length == 6) {
+            console.log("catch post");
+            getStatsData();
+        }
+    });
+}
+
+function getStatsData() {
+    mapsPlaceholder[0].spin(true);
+    $.ajax({
+       headers: {"X-CSRFToken": getCookie('csrftoken')},
+       method: "POST",
+       url: sdataurl,
+       data: { 'station': $("#station_dd").val()},
+       success: function(data) {
+            $("#Stats").html(data);
+        }
+    }).done(function() {
+        mapsPlaceholder[0].spin(false);
     });
 }
 
@@ -141,6 +163,7 @@ function getRegionData() {
             $("#station_dd").val(sname);
             getStationData();
             getCatchData();
+            getStatsData();
         }
     });
 }
@@ -189,7 +212,6 @@ function gauges_map_init_basic (map, options) {
     });
 
     map.addLayer(markers);
-    // mapsPlaceholder[0].getContainer().className += ' sidebar-map'
 }
 
 // General

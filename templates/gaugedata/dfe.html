@@ -14,6 +14,8 @@
     <script src="{% static 'gaugedata/spin.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.min.js" integrity="sha256-FqTbaZe4SYo2IKnSOLwMxj9WsafTRdjRT6ZCEVKJCd0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.min.css" integrity="sha256-RL9kShsLcf2jHG2zzLh1peDLvWOEK0wPFWSZTiYykc4=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.min.css">
 {% endblock %}
@@ -118,56 +120,10 @@
 {#        <div role="tabpanel" class="tab-pane" id="EMP">Empirical methods</div>#}
 {#        <div role="tabpanel" class="tab-pane" id="UH">Unit Hydrograph</div>#}
         <div role="tabpanel" class="tab-pane" id="Stats">
-            <div class="row mx-0">
-                <div class="col-md-6 p-1 my-auto">
-                    {{ bokeh_div|safe }}
 
-                    {{ bokeh_script|safe }}
-                </div>
-                <div class="col-md-6 p-0">
-                    <table class="table table-dark m-0">
-                        <tr>
-                            <th>Frequency analysis results</th>
-                        </tr>
-                        <tr>
-                            <th>RP</th>
-                            <th>Flow (m<sup>3</sup>.s<sup>-1</sup>)</th>
-                        </tr>
-                        <tr>
-                            <th>2yr</th>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <th>5yr</th>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <th>10yr</th>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <th>20yr</th>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <th>50yr</th>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <th>100yr</th>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <th>200yr</th>
-                            <td>50</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="Results">Output results here</div>
     </div>
-
 </div>
 
 {% endblock %}
@@ -180,6 +136,7 @@
         var sname = "{{ name }}";
         var gdataurl = '{% url "gaugedata:gauged" %}';
         var cdataurl = '{% url "gaugedata:catchform" %}';
+        var sdataurl = '{% url "gaugedata:statsdata" %}';
         var rdataurl = '{% url "gaugedata:regions" %}';
     </script>
     <script src="{% static 'gebruikers/NFSP.js' %}"></script>

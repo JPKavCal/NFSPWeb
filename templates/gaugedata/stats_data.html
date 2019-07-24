@@ -1,0 +1,25 @@
+
+<div class="row mx-0">
+    <div class="col-md-6 p-1 my-auto">
+        {{ bokeh_div|safe }}
+
+        {{ bokeh_script|safe }}
+    </div>
+    <div class="col-md-6 p-0">
+        <table class="table table-dark m-0">
+            <tr>
+                <th>Frequency analysis results</th>
+            </tr>
+            <tr>
+                <th>RP (1:x yr)</th>
+                <th>Flow (m<sup>3</sup>.s<sup>-1</sup>)</th>
+            </tr>
+            {% for x, y in xf %}
+            <tr>
+                <th>{{ x }}</th>
+                <td>{{ y }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
