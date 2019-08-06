@@ -12,3 +12,4 @@ dj-database-url
 django-fullurl
 bokeh
 django-widget-tweaks
+pandas

@@ -22,7 +22,7 @@ def gauges(request):
 @login_required
 def dfe(request):
     gauges = RiverGauge.objects.all()
-    region = ['A', 'B', 'C', 'D', 'E', 'G', 'H', 'J', 'K', 'L', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X']
+    region = ['A']  # , 'B', 'C', 'D', 'E', 'G', 'H', 'J', 'K', 'L', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X']
 
     if request.method == 'POST':
         name = request.POST['station']
@@ -123,18 +123,23 @@ def catchform(request):
             y = []
 
         return render(request, 'gaugedata/catch_data.html', {'form': form,
-                                                               'x_list': y,
-                                                               "bokeh_script": script,
-                                                               "bokeh_div": div
+                                                             'x_list': y,
+                                                             "bokeh_script": script,
+                                                             "bokeh_div": div
                                                              })
 
 
 @login_required
 def stats_data(request):
+    from django.templatetags.static import static
+    import pandas as pd
+
+    catchment = request.POST['station']
+    df = pd.read_csv(f"./{static(f'gaugedata/AMS/{catchment}_HYRaw.csv')}")
 
     # Define AMS panel
-    x = [1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995]
-    y = [3, 4, 12, 1, 5, 13, 25, 12, 6, 7]
+    x = df.Hydroyear.values
+    y = df['EXT.FLOW'].values
 
     TOOLTIPS = [
         ("Year", "@year"),
@@ -162,9 +167,10 @@ def stats_data(request):
     plot_ams.circle('year', 'flow', source=source_ams, fill_color="white", size=8)
     plot_ams.toolbar.logo = None
 
+    df = pd.read_csv(f"./{static(f'gaugedata/AMS/{catchment}_FFA.csv')}")
     # Define FFA Panel
-    xf = [2, 5, 10, 20, 50, 100, 200]
-    yf = [10, 20, 50, 100, 200, 300, 400]
+    xf = df.iloc[:,0].values
+    yf = df.GPA.values.round(3)
 
     TOOLTIPSf = [
         ("RP", "@rp"),

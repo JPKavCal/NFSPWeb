@@ -86,7 +86,6 @@
                 </div>
 
             </form>
-            <h4 class="jumbotron-heading">Only catchments for Region A have been uploaded</h4>
         </div>
         <div class="col-md-6 p-0">
             {% leaflet_map "dfe_map" callback="dfe_map_init_basic" %}
@@ -95,14 +94,14 @@
 <div>
 
     <ul class="nav nav-pills nav-justified">
-        <li role="presentation" class="nav-item"><a class="nav-link rounded-0 active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
+        <li role="presentation" class="nav-item"><a id="p_tab" class="nav-link rounded-0 active" href="#catch_param" aria-controls="catch_param" role="tab" data-toggle="tab">Parameters</a></li>
 {#        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#RM" aria-controls="RM" role="tab" data-toggle="tab">RM</a></li>#}
 {#        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#ARM" aria-controls="ARM" role="tab" data-toggle="tab">ARM</a></li>#}
 {#        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SDF" aria-controls="SDF" role="tab" data-toggle="tab">SDF</a></li>#}
 {#        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#SCS" aria-controls="SCS" role="tab" data-toggle="tab">SCS</a></li>#}
 {#        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#EMP" aria-controls="EMP" role="tab" data-toggle="tab">EMP</a></li>#}
 {#        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#UH" aria-controls="UH" role="tab" data-toggle="tab">UH</a></li>#}
-        <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Stats</a></li>
+        <li role="presentation" class="nav-item dws"><a class="nav-link rounded-0" href="#Stats" aria-controls="Stats" role="tab" data-toggle="tab">Observations</a></li>
         <li role="presentation" class="nav-item"><a class="nav-link rounded-0" href="#Results" aria-controls="Results" role="tab" data-toggle="tab">Results</a></li>
     </ul>
 

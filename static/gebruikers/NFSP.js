@@ -1,9 +1,8 @@
 var $root = $('html, body');
 
 $(document).on('shown.bs.collapse', function(event){
-    console.log()
     $root.animate({
-        scrollTop: $("#" + event.currentTarget.activeElement.id.substring(0,3)).offset().top - 55
+        scrollTop: $("#" + event.currentTarget.activeElement.id.substring(0, event.currentTarget.activeElement.id.length - 1)).offset().top - 55
     }, 500);
 });
 
@@ -13,8 +12,6 @@ $("#region").change(function() {
     $("#Lon").val('');
     getRegionData();
 });
-
-
 
 $("#station_dd").change(function() {
     getStationData();
@@ -125,9 +122,7 @@ function getCatchData() {
         }
     }).done(function() {
         mapsPlaceholder[0].spin(false);
-        console.log("catch pre");
         if (sname.length == 6) {
-            console.log("catch post");
             getStatsData();
         }
     });

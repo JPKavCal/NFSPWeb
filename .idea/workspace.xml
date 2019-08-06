@@ -2,14 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/gaugedata/stats_data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H006_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H006_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H007_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H007_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H012_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H012_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H013_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H013_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H023_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H023_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H024_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H024_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H027_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H027_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H029_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H029_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H032_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H032_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H038_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H038_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H039_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H039_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H040_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H040_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H042_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H042_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H044_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H044_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H045_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H045_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H047_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H047_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H049_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H049_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H050_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H050_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H053_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H053_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H054_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H054_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H056_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H056_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H058_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H058_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H061_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H061_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H063_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H063_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H077_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H077_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R003_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R003_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R005_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R005_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R006_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R006_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R007_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R007_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R009_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R009_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R011_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R011_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R012_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R012_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R014_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R014_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R015_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R015_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R002_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R002_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R003_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R003_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R004_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R004_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H005_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H005_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H007_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H007_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4R001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4R001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5H004_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5H004_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R002_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R002_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H010_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H010_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H011_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H011_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H012_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H012_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H018_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H018_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H020_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H020_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H021_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H021_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H022_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H022_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H024_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H024_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R002_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R002_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H003_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H003_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R002_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R002_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R003_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R003_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R004_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R004_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H004_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H004_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H006_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H006_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H012_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H012_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R001_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R001_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R002_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R002_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R004_FFA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R004_HYRaw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/nfsp/NFSP_Projects.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/nfsp/images/Jpj_Pietersen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/nfsp/images/Roland-Schulze.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/nfsp/images/kobus_du_plessis.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaugedata/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaugedata/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NFSP_Website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NFSP_Website/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gaugedata/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaugedata/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gaugedata/bounded_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/catch_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/gaugedata/catch_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/catch_data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/gaugedata/dfe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/dfe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gaugedata/gauges.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/gauges.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,106 +162,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="NFSPWebsite" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="130" column="27" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauges.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gaugedata/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/gaugedata/stats_data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1815">
-              <caret line="121" column="55" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gaugedata/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/gaugedata/catch_data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="34" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NFSPWebsite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
-              <folding>
-                <element signature="e#312#321#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="44" column="87" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -147,103 +187,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/gebruikers/views.py" />
-        <option value="$PROJECT_DIR$/../../../../Work/SWData/SW_Data.py" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/dwsinfo.html" />
-        <option value="$PROJECT_DIR$/gebruikers/urls.py" />
-        <option value="$PROJECT_DIR$/runtime.txt" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.secret_key" />
-        <option value="$PROJECT_DIR$/.secret_key2" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/static/landing-page.min.css" />
-        <option value="$PROJECT_DIR$/templates/gebruikers/login.html" />
-        <option value="$PROJECT_DIR$/gaugedata/admin.py" />
-        <option value="$PROJECT_DIR$/populate_Shp.py" />
-        <option value="$PROJECT_DIR$/NFSPWebsite/urls.py" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/gauge_dropdown.html" />
-        <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/NFSP_Website/views.py" />
-        <option value="$PROJECT_DIR$/NFSP_Website/urls.py" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/projects.html" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/team.html" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/publications.html" />
-        <option value="$PROJECT_DIR$/templates/gebruikers/registration.html" />
-        <option value="$PROJECT_DIR$/static/csrf.js" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/gaugedata/models.py" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/bounded_form.html" />
-        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.css" />
-        <option value="$PROJECT_DIR$/static/manifest.json" />
-        <option value="$PROJECT_DIR$/NFSPWebsite/settings.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/stats_data.html" />
-        <option value="$PROJECT_DIR$/gaugedata/views.py" />
-        <option value="$PROJECT_DIR$/gaugedata/urls.py" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/dfe.html" />
-        <option value="$PROJECT_DIR$/templates/gaugedata/gauges.html" />
-        <option value="$PROJECT_DIR$/static/gebruikers/NFSP.js" />
-        <option value="$PROJECT_DIR$/templates/NFSP_Website/index.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="1920" />
-    <option name="height" value="1055" />
-  </component>
+  <component name="ProjectId" id="1OTLDccV2hhVW9LGeSlCPT7tQbs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="gaugedata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="gebruikers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFSPWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFSPWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="NFSP_Website" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -366,6 +311,14 @@
       <workItem from="1563738289073" duration="599000" />
       <workItem from="1563776100361" duration="405000" />
       <workItem from="1563887127716" duration="1247000" />
+      <workItem from="1563992519675" duration="3354000" />
+      <workItem from="1563996528357" duration="715000" />
+      <workItem from="1563997496013" duration="613000" />
+      <workItem from="1564044905166" duration="32000" />
+      <workItem from="1564085738395" duration="184000" />
+      <workItem from="1565036026354" duration="1996000" />
+      <workItem from="1565070401516" duration="1514000" />
+      <workItem from="1565081352137" duration="8749000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
@@ -398,9 +351,6 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223499000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -409,34 +359,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.17395945" />
-      <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
-      <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.15741728" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010941" side_tool="true" weight="0.33045357" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4989059" visible="true" weight="0.27213824" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32829374" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -447,20 +369,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -486,324 +395,5 @@
     <MESSAGE value="First commit of templates, etc." />
     <MESSAGE value="Added gdal to requirements" />
     <option name="LAST_COMMIT_MESSAGE" value="Added gdal to requirements" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NFSP_Website/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NFSP_Website/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Work/SWData/SW_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
-          <folding>
-            <element signature="e#89#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.secret_key" />
-    <entry file="file://$PROJECT_DIR$/.secret_key2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gaugedata/Gauge_Loading.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/landing-page.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="620" selection-start-line="4" selection-start-column="612" selection-end-line="4" selection-end-column="620" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/rest_framework/js/csrf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gebruikers/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gebruikers/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#25#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/leaflet.spin.min.js" />
-    <entry file="file://$PROJECT_DIR$/populate_Shp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NFSPWebsite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gaugedata/index.html" />
-    <entry file="file://$PROJECT_DIR$/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/NFSP_Website/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gis/js/OLMapWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gis/img/draw_polygon_on.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gis/img/draw_polygon_off.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gis/img/draw_point_off.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gis/img/draw_line_on.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gis/img/draw_line_off.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauge_dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gebruikers/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gebruikers/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1875">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/csrf.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/publications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NFSP_Website/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/forms.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="14" selection-end-line="55" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/dfe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="55" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/catch_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NFSPWebsite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
-          <folding>
-            <element signature="e#312#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="44" column="87" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/stats_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gaugedata/gauges.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaugedata/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/gebruikers/NFSP.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="130" column="27" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NFSP_Website/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

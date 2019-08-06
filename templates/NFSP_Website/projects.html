@@ -9,170 +9,46 @@
 
         <div class="jumbotron py-4 mb-0">
           <h1 class="jumbotron-heading">Projects</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p class="lead text-muted">
+              The re-prioritised projects for the NFSP, led by international developments, are listed below, which also
+              includes focus areas, progress made to date, or additional requirements
+          </p>
         </div>
 
       <div class="album py-3 bg-dark flex-fill">
         <div id="project_album" class="container">
+            <div class="row my-2 justify-content-center">
+              {% for key, val in data.items %}
+                <div id="pr{{ key }}" class="col-md-6 col-lg-4 py-2">
+                  <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5>Project {{ key }}</h5>
+                            <span class="badge badge-{{ val.pri.badge }}">{{ val.pri.text }}</span>
+                        </div>
+                      <p class="card-text">{{ val.title }}</p>
+                        <div class="collapse pb-2" id="collapseProj{{ key }}" data-parent="#project_album">
+                          <div class="card card-body">
+                            <h5>Description</h5>
+                              <p>{{ val.desc }}</p>
+                            {% if val.focus %}
+                              <h5>Focus Area</h5>
+                              <p>{{ val.focus }}</p>
+                            {% endif %}
+                          </div>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                          <button id="pr{{ key }}_" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj{{ key }}" aria-expanded="false" aria-controls="collapseProj{{ key }}">
+                            Details
+                          </button>
+                        <small class="text-muted">Rainfall / Data</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <div class="row my-2 justify-content-center">
-            <div id="pr1" class="col-md-6 col-lg-4 py-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5>Project 1</h5>
-                        <span class="badge badge-danger">High</span>
-                    </div>
-                  <p class="card-text">Rainfall Data Inventory, Access, Database Population, Infilling and  Quality Control</p>
-                    <div class="collapse pb-2" id="collapseProj1" data-parent="#project_album">
-                      <div class="card card-body">
-                        <h5>Description</h5>
-                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
-                        <h5>Focus Area</h5>
-                          <p>Compile inventory of daily and sub-daily rainfall, gain access to the data, populate database, quality control, infill database</p>
-                        <h5>Progress</h5>
-                          <p>Rainfall and climate data for NFSP requested from SAWS.</p>
-                        <h5>More...</h5>
-                          <p>More information...</p>
-                      </div>
-                    </div>
-                    <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button id="pr1_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj1" aria-expanded="false" aria-controls="collapseProj1">
-                        Details
-                      </button>
-                    <small class="text-muted">Rainfall / Data</small>
-                  </div>
-                </div>
-              </div>
+              {% endfor %}
             </div>
-            <div id="pr2" class="col-md-6 col-lg-4 py-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h5>Project 2</h5>
-                        <span class="badge badge-danger">High</span>
-                    </div>
-                  <p class="card-text">Flow/Discharge Data Inventory, Access, Database Population,  Quality Control & Extension</p>
-                    <div class="collapse pb-2" id="collapseProj2" data-parent="#project_album">
-                      <div class="card card-body">
-                        <h5>Description</h5>
-                          <p>Compile station and catchment attributes; Review and extend stage-discharge relationships for strategic streamflow gauging stations and re-calculate/estimate missing historically measured flood discharges, both at-site and at upstream and downstream gauges.</p>
-                      </div>
-                    </div>
-                  <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button id="pr2_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj2" aria-expanded="false" aria-controls="collapseProj2">
-                        Details
-                      </button>
-                    <small class="text-muted">Rainfall</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="pr3" class="col-md-6 col-lg-4 py-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h5>Project 3</h5>
-                        <span class="badge badge-danger">High</span>
-                    </div>
-                  <p class="card-text">Update point design rainfall, temporal distributions and ARF's for South Africa, including climate change</p>
-                    <div class="collapse pb-2" id="collapseProj3" data-parent="#project_album">
-                      <div class="card card-body">
-                        <h5>Description</h5>
-                          <p>Further develop regional approach with updated rainfall data and estimate for low exceedance probabilities (up to 10 000 year RI) and develop ARF's for South Africa</p>
-                      </div>
-                    </div>
-                  <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button id="pr3_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj3" aria-expanded="false" aria-controls="collapseProj3">
-                        Details
-                      </button>
-                    <small class="text-muted">Rainfall</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="pr4" class="col-md-6 col-lg-4 py-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h5>Project 4</h5>
-                        <span class="badge badge-danger">High</span>
-                    </div>
-                  <p class="card-text">Develop / refine regionalised / pooled Index Flood methods</p>
-                    <div class="collapse pb-2" id="collapseProj4" data-parent="#project_album">
-                      <div class="card card-body">
-                        <h5>Description</h5>
-                          <p>Identify homogenous flood regions and develop regionalised pooled flood statistics/growth curves, including  station-year-based annual exceedence probability methodology for extreme floods</p>
-                      </div>
-                    </div>
-                  <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button id="pr4_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj4" aria-expanded="false" aria-controls="collapseProj5">
-                        Details
-                      </button>
-                    <small class="text-muted">Methods</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="pr5" class="col-md-6 col-lg-4 py-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h5>Project 5</h5>
-                        <span class="badge badge-danger">High</span>
-                    </div>
-                  <p class="card-text">Develop a fully probabilistic Joint Peak-Volume method</p>
-                    <div class="collapse pb-2" id="collapseProj5" data-parent="#project_album">
-                      <div class="card card-body">
-                        <h5>Description</h5>
-                          <p>Render the existing JPV method fully probabilistic by means of bivariate Copula probability theory and refined  regionalisation from Project 4</p>
-                      </div>
-                    </div>
-                  <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button id="pr5_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj5" aria-expanded="false" aria-controls="collapseProj5">
-                        Details
-                      </button>
-                    <small class="text-muted">Methods</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="pr6" class="col-md-6 col-lg-4 py-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h5>Project 6</h5>
-                        <span class="badge badge-warning">Medium</span>
-                    </div>
-                  <p class="card-text">Create web-based portal for access data, information and methods</p>
-                    <div class="collapse pb-2" id="collapseProj6" data-parent="#project_album">
-                      <div class="card card-body">
-                        <h5>Description</h5>
-                          <p>Create structure and GIS databases to serve available data and methods to practitioners and researchers and to update the portal with new data and methods</p>
-                      </div>
-                    </div>
-                  <div class="mt-auto d-flex justify-content-between align-items-center">
-                      <button id="pr6_col" class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseProj6" aria-expanded="false" aria-controls="collapseProj6">
-                        Details
-                      </button>
-                    <small class="text-muted">Products</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h5>More projects</h5>
-                  <p class="card-text">Still to populate</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 
