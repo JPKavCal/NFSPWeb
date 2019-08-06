@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.core.exceptions import ObjectDoesNotExist
 from .models import RiverGauge, Catchment, CatchForm
 from django.contrib.auth.decorators import login_required
@@ -21,7 +21,7 @@ def gauges(request):
 
 @login_required
 def dfe(request):
-    gauges = RiverGauge.objects.all()
+    gauge_l = RiverGauge.objects.all()
     region = ['A']  # , 'B', 'C', 'D', 'E', 'G', 'H', 'J', 'K', 'L', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X']
 
     if request.method == 'POST':
@@ -29,7 +29,7 @@ def dfe(request):
     else:
         name = None
 
-    return render(request, 'gaugedata/dfe.html', {'gauges': gauges,
+    return render(request, 'gaugedata/dfe.html', {'gauges': gauge_l,
                                                   'user': request.user,
                                                   'name': name,
                                                   'regions': region,
@@ -84,7 +84,7 @@ def catchform(request):
                 catchment.dr200,
             ]
 
-            TOOLTIPS = [
+            tooltips = [
                 ("Year", "@x"),
                 ("Rainfall Depth (mm)", "@y")
             ]
@@ -104,7 +104,7 @@ def catchform(request):
                 # plot_width=450,
                 plot_height=400,
                 id='rain_fig',
-                tooltips=TOOLTIPS,
+                tooltips=tooltips,
                 active_drag=None,
                 active_scroll=None
             )
@@ -135,13 +135,20 @@ def stats_data(request):
     import pandas as pd
 
     catchment = request.POST['station']
-    df = pd.read_csv(f"./{static(f'gaugedata/AMS/{catchment}_HYRaw.csv')}")
+    try:
+        df = pd.read_csv(f"./{static(f'gaugedata/AMS/{catchment}_HYRaw.csv')}")
+    except FileNotFoundError:
+        return render(request, 'gaugedata/stats_data.html', {
+            "bokeh_script": None,
+            "bokeh_div": None,
+            "xf": None
+        })
 
     # Define AMS panel
     x = df.Hydroyear.values
     y = df['EXT.FLOW'].values
 
-    TOOLTIPS = [
+    tooltips = [
         ("Year", "@year"),
         ("Flow", "@flow")
     ]
@@ -159,7 +166,7 @@ def stats_data(request):
         # plot_width=450,
         plot_height=400,
         id='stat_fig',
-        tooltips=TOOLTIPS,
+        tooltips=tooltips,
         active_drag=None,
         active_scroll=None
     )
@@ -169,10 +176,10 @@ def stats_data(request):
 
     df = pd.read_csv(f"./{static(f'gaugedata/AMS/{catchment}_FFA.csv')}")
     # Define FFA Panel
-    xf = df.iloc[:,0].values
+    xf = df.iloc[:, 0].values
     yf = df.GPA.values.round(3)
 
-    TOOLTIPSf = [
+    tooltip_sf = [
         ("RP", "@rp"),
         ("Flow", "@flow")
     ]
@@ -191,7 +198,7 @@ def stats_data(request):
         # plot_width=450,
         plot_height=400,
         id='stat_fig2',
-        tooltips=TOOLTIPSf,
+        tooltips=tooltip_sf,
         active_drag=None,
         active_scroll=None
     )
@@ -204,8 +211,6 @@ def stats_data(request):
               Panel(child=row(plot_ffa, t), title="FFA"),
               Panel(child=row(plot_ams, t), title="AMS")
     ])
-
-    t = Spacer()
 
     script, div = components(tabs, CDN)
 

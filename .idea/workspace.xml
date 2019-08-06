@@ -2,160 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H006_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H006_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H007_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H007_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H012_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H012_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H013_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H013_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H023_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H023_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H024_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H024_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H027_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H027_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H029_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H029_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H032_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H032_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H038_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H038_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H039_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H039_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H040_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H040_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H042_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H042_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H044_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H044_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H045_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H045_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H047_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H047_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H049_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H049_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H050_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H050_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H053_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H053_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H054_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H054_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H056_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H056_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H058_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H058_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H061_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H061_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H063_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H063_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H077_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2H077_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R003_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R003_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R005_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R005_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R006_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R006_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R007_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R007_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R009_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R009_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R011_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R011_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R012_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R012_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R014_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R014_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R015_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A2R015_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R002_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R002_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R003_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R003_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R004_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A3R004_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H005_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H005_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H007_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4H007_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4R001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A4R001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5H004_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5H004_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R002_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A5R002_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H010_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H010_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H011_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H011_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H012_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H012_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H018_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H018_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H020_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H020_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H021_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H021_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H022_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H022_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H024_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6H024_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R002_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A6R002_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H003_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A7H003_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R002_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R002_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R003_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R003_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R004_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A8R004_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H004_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H004_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H006_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H006_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H012_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9H012_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R001_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R001_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R002_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R002_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R004_FFA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/gaugedata/AMS/A9R004_HYRaw.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/nfsp/NFSP_Projects.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/nfsp/images/Jpj_Pietersen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/nfsp/images/Roland-Schulze.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/nfsp/images/kobus_du_plessis.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NFSP_Website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NFSP_Website/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gaugedata/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaugedata/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/publications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/NFSP_Website/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NFSP_Website/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gaugedata/catch_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/catch_data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gaugedata/dfe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gaugedata/dfe.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -318,7 +186,9 @@
       <workItem from="1564085738395" duration="184000" />
       <workItem from="1565036026354" duration="1996000" />
       <workItem from="1565070401516" duration="1514000" />
-      <workItem from="1565081352137" duration="8749000" />
+      <workItem from="1565081352137" duration="11542000" />
+      <workItem from="1565095555366" duration="14000" />
+      <workItem from="1565123490997" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>
