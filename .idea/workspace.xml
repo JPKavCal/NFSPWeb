@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e8c9efb-711c-48d5-a630-44098abdb90a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaugedata/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaugedata/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/gebruikers/NFSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/gebruikers/NFSP.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +188,7 @@
       <workItem from="1565070401516" duration="1514000" />
       <workItem from="1565081352137" duration="11542000" />
       <workItem from="1565095555366" duration="14000" />
-      <workItem from="1565123490997" duration="134000" />
+      <workItem from="1565123490997" duration="742000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Procfile, README, requirements and runtime files">
       <created>1561470552062</created>

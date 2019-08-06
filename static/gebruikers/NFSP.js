@@ -21,6 +21,7 @@ $("#station_dd").change(function() {
 
 $("#dfe_method").change(function() {
     clear_map();
+    $('#p_tab').trigger('click')
     $("#Lat").val('');
     $("#Lon").val('');
     $("#station_dd").val('');
